@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:p1="urn:import:com.google.gwt.user.cellview.client"
+	xmlns:d='urn:import:com.google.gwt.user.datepicker.client' xmlns:p="urn:import:javax.persistence">
+
+	<ui:style src="new2.css" field="new2"></ui:style>
+	<g:HTMLPanel>
+		<div class="{new2.frame-wrap}">
+			<!--面包屑 [[ -->
+			<g:FlowPanel ui:field="breadCrumbs" />
+			<!--面包屑 ]] -->
+
+
+			<h3><g:InlineLabel ui:field="titleText" />
+			</h3>
+			<span class="{new2.cutline}"></span>
+
+			<div class="{new2.content-wrap}">
+				<div class="{new2.form}">
+						<h3><label class="{new2.label}">餐厅基本信息:</label></h3>
+					<div class="{new2.form-line}">
+						<label class="{new2.label}"><span style="color:red">*</span>餐厅缩写：</label>
+						<div class="{new2.element}">
+							<g:TextBox maxLength="30" ui:field="cid" styleName="{new2.text}" />
+						</div>
+					</div>
+					<div class="{new2.form-line}">
+						<label class="{new2.label}"><span style="color:red">*</span>餐厅名称：</label>
+						<div class="{new2.element}">
+							<g:TextBox maxLength="30" ui:field="enterpriseName" styleName="{new2.text}" />
+						</div>
+					</div>
+					<div class="{new2.form-line}">
+						<label class="{new2.label}">餐厅地址：</label>
+						<div class="{new2.element}">
+							<g:TextBox maxLength="30" ui:field="address" styleName="{new2.text}" />
+						</div>
+					</div>
+
+					<div class="{new2.form-line}">
+						<label class="{new2.label}"><span style="color:red">*</span>餐厅联系人:</label>
+						<div class="{new2.element}">
+							<g:TextBox maxLength="20" ui:field="linkman" styleName="{new2.text}" />
+						</div>
+					</div>
+					<div class="{new2.form-line}">
+						<label class="{new2.label}"><span style="color:red">*</span>联系电话：</label>
+						<div class="{new2.element}">
+							<g:TextBox maxLength="20" ui:field="tell" styleName="{new2.text}" />
+						</div>
+					</div>
+					<div class="{new2.form-line}">
+						<label class="{new2.label}">Email：</label>
+						<div class="{new2.element}">
+							<g:TextBox maxLength="50" ui:field="email" styleName="{new2.text}" />
+						</div>
+					</div>
+					<div class="{new2.form-line}">
+						<label class="{new2.label}"><span style="color:red">*</span>手机号：</label>
+						<div class="{new2.element}">
+							<g:TextBox maxLength="20" ui:field="callphone" styleName="{new2.text}" />
+						</div>
+					</div>
+
+	
+					
+					
+					<span class="{new2.cutline}"></span>
+					<div class="{new2.form-line} {new2.form-line-btn}">
+						<div class="{new2.element}">
+							<span class="{new2.btn}">
+								<g:Button ui:field="addBtn" text="创建" />
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

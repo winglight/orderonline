@@ -1,0 +1,6609 @@
+/**
+ * The file contains styles for GWT widgets in the HR project.
+ *
+ * In order to maintain cross-browser compatibility, the following syntax is
+ * used to create IE6 specific style rules:
+ *    .gwt-Widget {
+ *      property: rule applies to all browsers
+ *      -property: rule applies only to IE6 (overrides previous rule)
+ *    }
+ *    * html .gwt-Widget {
+ *      property: rule applies to all versions of IE
+ *    }
+ */
+body {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000000;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	behavior: url(js/body.htc);
+	width: 100%;
+	height: 100%;
+	word-wrap: normal;
+	word-break: keep-all;
+	-SCROLLBAR-FACE-COLOR: #f6f6f6;
+	-BACKGROUND-ATTACHMENT: fixed;
+	-SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	-SCROLLBAR-SHADOW-COLOR: #cccccc;
+	-SCROLLBAR-3DLIGHT-COLOR: #cccccc;
+	-SCROLLBAR-ARROW-COLOR: #330000;
+	-SCROLLBAR-TRACK-COLOR: #f6f6f6;
+	-SCROLLBAR-DARKSHADOW-COLOR: #ffffff;
+}
+
+html {
+	height: 100%;
+}
+
+form {
+	margin: 0px;
+}
+
+/*
+table td, select {
+  font-family: Arial Unicode MS, Arial, sans-serif;
+  font-size: small;
+}
+*/
+pre {
+	font-family: "courier new", courier;
+	font-size: small;
+}
+/*
+body {
+  color: black;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  background: #fff;
+  direction: ltr;
+}
+*/
+
+/*
+a, a:visited, a:hover {
+  color: #0000AA;
+}
+*/
+a:link {
+	font-size: 12px;
+
+}
+
+a:visited {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+
+a:hover {
+	font-size: 12px;
+	color: #FF3300;
+	text-decoration: none;
+}
+
+a:active {
+	font-size: 12px;
+	color: #FF3300;
+	text-decoration: none;
+}
+
+/* --------------- GWT specific --------------- */
+
+/**
+ * The reference theme can be used to determine when this style sheet has
+ * loaded.  Create a hidden div element with absolute position, assign the style
+ * name below, and attach it to the DOM.  Use a timer to detect when the
+ * element's height and width are set to 5px.
+ */
+.gwt-Reference-standard {
+	height: 5px;
+	width: 5px;
+	zoom: 1;
+}
+
+/*
+.gwt-Button {
+  margin: 0;
+  padding: 3px 5px;
+  text-decoration: none;
+  font-size: small;
+  cursor: pointer;
+  cursor: hand;
+  background: url("images/hborder.png") repeat-x 0px -27px;
+  border: 1px outset #ccc;
+}
+*/
+.gwt-Button {
+	border: 1px solid #9eb5c2;
+	font-size: 12px;
+	color: #174b73;
+	padding-top: 3px;
+	cursor: pointer;
+	
+	background-color: #e4f6ff;
+}
+
+.gwt-Button:active {
+	border: 1px inset #ccc;
+}
+
+.gwt-Button:hover {
+	border-color: #9cf #69e #69e #7af;
+}
+
+.gwt-Button[disabled] {
+	cursor: default;
+	color: #888;
+}
+
+.gwt-Button[disabled]:hover {
+		border: 1px solid #9eb5c2;
+}
+
+.gwt-CheckBox {
+	
+}
+
+.gwt-CheckBox-disabled {
+	color: #888;
+}
+
+.gwt-DecoratorPanel {
+	
+}
+
+.gwt-DecoratorPanel .topCenter,.gwt-DecoratorPanel .bottomCenter {
+	background-color: #C9D2C6;
+}
+
+.gwt-DecoratorPanel .middleLeft,.gwt-DecoratorPanel .middleRight {
+	background-color: #C9D2C6;
+}
+
+.gwt-DecoratorPanel .topLeftInner,.gwt-DecoratorPanel .topRightInner,.gwt-DecoratorPanel .bottomLeftInner,.gwt-DecoratorPanel .bottomRightInner
+	{
+	width: 2px;
+	height: 2px;
+	zoom: 2;
+}
+
+.gwt-DecoratorPanel .topLeft {
+	background: url(images/corner.png) no-repeat 0px 0px;
+	-background: url(images/corner_ie6.png) no-repeat 0px 0px;
+}
+
+.gwt-DecoratorPanel .topRight {
+	background: url(images/corner.png) no-repeat -5px 0px;
+	-background: url(images/corner_ie6.png) no-repeat -5px 0px;
+}
+
+.gwt-DecoratorPanel .bottomLeft {
+	background: url(images/corner.png) no-repeat 0px -5px;
+	-background: url(images/corner_ie6.png) no-repeat 0px -5px;
+}
+
+.gwt-DecoratorPanel .bottomRight {
+	background: url(images/corner.png) no-repeat -5px -5px;
+	-background: url(images/corner_ie6.png) no-repeat -5px -5px;
+}
+
+* html .gwt-DecoratorPanel .topLeftInner,* html .gwt-DecoratorPanel .topRightInner,* html .gwt-DecoratorPanel .bottomLeftInner,* html .gwt-DecoratorPanel .bottomRightInner
+	{
+	width: 2px;
+	height: 2px;
+	overflow: hidden;
+}
+
+.gwt-DialogBox2 .Caption2 {
+	background: url() no-repeat;
+	background-color: #333333;
+	color: #174a77;
+	font-size: 12px;
+	position: relative;
+	padding: 0px 0px 0px 0px;
+	height: 29px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.gwt-DialogBox2 .dialogTopCenter {
+	width: 220px;
+}
+
+.gwt-DialogBox .Caption {
+	background: url() no-repeat;
+	border-bottom: 0px solid #BBBBBB;
+	border-top: 2px solid #333333;
+	border-left: 2px solid #333333;
+	border-right: 2px solid #333333;
+	padding-left: 10px;
+	font-weight: bold;
+	background-color: #C9D2C6;
+	font-size: 14px;
+	position: relative;
+	height: 29px;
+	line-height: 25px;
+}
+.gwt-DialogBox .Caption2 {
+	background: url() no-repeat;
+	border-bottom: 0px solid #BBBBBB;
+	border-top: 2px solid #333333;
+	border-left: 2px solid #333333;
+	border-right: 2px solid #333333;
+	padding-left: 10px;
+	font-weight: bold;
+	background-color: #F4F4F4;
+	font-size: 14px;
+	position: relative;
+	height: 29px;
+	line-height: 25px;
+	padding-top: 5px;
+}
+.gwt-DialogBox .dialogContent {
+	border: 0px solid #9bb1be;
+}
+
+.gwt-DialogBox .dialogMiddleCenter {
+	background: white;
+	padding:0px;
+}
+
+.gwt-DialogBox .dialogBottomCenter {
+	background: url() no-repeat;
+	background-color: #333333;
+}
+
+.gwt-DialogBox .dialogMiddleLeft {
+	background: url() no-repeat;
+	background-color: #333333;
+}
+
+.gwt-DialogBox .dialogMiddleRight {
+	background: url() no-repeat;
+	background-color: #333333;
+}
+
+.gwt-DialogBox .dialogTopLeftInner {
+	width: 2px;
+	zoom: 1;
+}
+
+.gwt-DialogBox .dialogTopRightInner {
+	width: 2px;
+	zoom: 1;
+}
+
+.gwt-DialogBox .dialogBottomLeftInner {
+	width: 2px;
+	height: 2px;
+	zoom: 1;
+}
+
+.gwt-DialogBox .dialogBottomRightInner {
+	width: 2px;
+	height: 2px;
+	zoom: 1;
+}
+
+.gwt-DialogBox .dialogTopLeft {
+	background: url() no-repeat;
+	background-color: #333333;
+}
+
+.gwt-DialogBox .dialogTopRight {
+	background: url() no-repeat;
+	background-color: #333333;
+}
+
+.gwt-DialogBox .dialogBottomLeft {
+	background: url() no-repeat;
+	background-color: #333333;
+}
+
+.gwt-DialogBox .dialogBottomRight {
+	background: url() no-repeat;
+	background-color: #333333;
+}
+
+* html .gwt-DialogBox .dialogTopLeftInner {
+	width: 2px;
+	overflow: hidden;
+}
+
+* html .gwt-DialogBox .dialogTopRightInner {
+	width: 2px;
+	overflow: hidden;
+}
+
+* html .gwt-DialogBox .dialogBottomLeftInner {
+	width: 2px;
+	height: 2px;
+	overflow: hidden;
+}
+
+* html .gwt-DialogBox .dialogBottomRightInner {
+	width: 2px;
+	height: 2px;
+	overflow: hidden;
+}
+
+.gwt-DisclosurePanel {
+	
+}
+
+.gwt-DisclosurePanel-open {
+	
+}
+
+.gwt-DisclosurePanel-closed {
+	
+}
+
+.gwt-DisclosurePanel .header,.gwt-DisclosurePanel .header a,.gwt-DisclosurePanel .header td
+	{
+	text-decoration: none; /* Remove underline from header */
+	color: black;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-DisclosurePanel .content {
+	border-left: 3px solid #e8eef7;
+	padding: 4px 0px 4px 8px;
+	margin-left: 6px;
+}
+
+.gwt-FileUpload {
+	
+}
+
+.gwt-Frame {
+	border-top: 2px solid #666;
+	border-left: 2px solid #666;
+	border-right: 2px solid #bbb;
+	border-bottom: 2px solid #bbb;
+}
+
+.gwt-HorizontalSplitPanel {
+	
+}
+
+.gwt-HorizontalSplitPanel .hsplitter {
+	cursor: move;
+	border: 0px;
+	background: #91c0ef url(images/vborder.png) repeat-y;
+}
+
+.gwt-VerticalSplitPanel {
+	
+}
+
+.gwt-VerticalSplitPanel .vsplitter {
+	cursor: move;
+	border: 0px;
+	background: #91c0ef url(images/hborder.png) repeat-x;
+}
+
+.gwt-HTML {
+	
+}
+
+.gwt-Hyperlink {
+	
+}
+
+.gwt-Image {
+	
+}
+
+.gwt-Label {
+	
+}
+
+.gwt-ListBox {
+	
+}
+
+.gwt-MenuBar {
+	cursor: default;
+}
+
+.gwt-MenuBar .gwt-MenuItem {
+	cursor: default;
+}
+
+.gwt-MenuBar .gwt-MenuItem-selected {
+	background: #E0EDFE;
+}
+
+.gwt-MenuBar-horizontal {
+	background: #e3e8f3 url(images/hborder.png) repeat-x 0px -2003px;
+	border: 1px solid #BBBBBB;
+}
+
+.gwt-MenuBar-horizontal .gwt-MenuItem {
+	padding: 0px 10px;
+	vertical-align: bottom;
+	color: #666666;
+	font-weight: bold;
+}
+
+.gwt-MenuBar-horizontal .gwt-MenuItemSeparator {
+	width: 1px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	border-left: 1px solid #888888;
+	background: white;
+}
+
+.gwt-MenuBar-horizontal .gwt-MenuItemSeparator .menuSeparatorInner {
+	width: 1px;
+	height: 1px;
+	background: white;
+}
+
+.gwt-MenuBar-vertical {
+	margin-top: 0px;
+	margin-left: 0px;
+	background: white;
+}
+
+.gwt-MenuBar-vertical table {
+	border-collapse: collapse;
+}
+
+.gwt-MenuBar-vertical .gwt-MenuItem {
+	padding: 4px 14px 4px 1px;
+}
+
+.gwt-MenuBar-vertical .gwt-MenuItemSeparator {
+	padding: 2px 0px;
+}
+
+.gwt-MenuBar-vertical .gwt-MenuItemSeparator .menuSeparatorInner {
+	height: 1px;
+	padding: 0px;
+	border: 0px;
+	border-top: 1px solid #777777;
+	background: #ddddee;
+	overflow: hidden;
+}
+
+.gwt-MenuBar-vertical .subMenuIcon {
+	padding-right: 4px;
+}
+
+.gwt-MenuBar-vertical .subMenuIcon-selected {
+	background: #E0EDFE;
+}
+
+.gwt-MenuBarPopup {
+	margin: 0px 0px 0px 3px;
+}
+
+.gwt-MenuBarPopup .menuPopupTopCenter {
+	background: url(images/hborder.png) 0px -12px repeat-x;
+}
+
+.gwt-MenuBarPopup .menuPopupBottomCenter {
+	background: url(images/hborder.png) 0px -13px repeat-x;
+	-background: url(images/hborder_ie6.png) 0px -13px repeat-x;
+}
+
+.gwt-MenuBarPopup .menuPopupMiddleLeft {
+	background: url(images/vborder.png) -12px 0px repeat-y;
+	-background: url(images/vborder_ie6.png) -12px 0px repeat-y;
+}
+
+.gwt-MenuBarPopup .menuPopupMiddleRight {
+	background: url(images/vborder.png) -13px 0px repeat-y;
+	-background: url(images/vborder_ie6.png) -13px 0px repeat-y;
+}
+
+.gwt-MenuBarPopup .menuPopupTopLeftInner {
+	width: 5px;
+	height: 5px;
+	zoom: 1;
+}
+
+.gwt-MenuBarPopup .menuPopupTopRightInner {
+	width: 8px;
+	height: 5px;
+	zoom: 1;
+}
+
+.gwt-MenuBarPopup .menuPopupBottomLeftInner {
+	width: 5px;
+	height: 8px;
+	zoom: 1;
+}
+
+.gwt-MenuBarPopup .menuPopupBottomRightInner {
+	width: 8px;
+	height: 8px;
+	zoom: 1;
+}
+
+.gwt-MenuBarPopup .menuPopupTopLeft {
+	background: url(images/corner.png) no-repeat 0px -36px;
+	-background: url(images/corner_ie6.png) no-repeat 0px -36px;
+}
+
+.gwt-MenuBarPopup .menuPopupTopRight {
+	background: url(images/corner.png) no-repeat -5px -36px;
+	-background: url(images/corner_ie6.png) no-repeat -5px -36px;
+}
+
+.gwt-MenuBarPopup .menuPopupBottomLeft {
+	background: url(images/corner.png) no-repeat 0px -41px;
+	-background: url(images/corner_ie6.png) no-repeat 0px -41px;
+}
+
+.gwt-MenuBarPopup .menuPopupBottomRight {
+	background: url(images/corner.png) no-repeat -5px -41px;
+	-background: url(images/corner_ie6.png) no-repeat -5px -41px;
+}
+
+* html .gwt-MenuBarPopup .menuPopupTopLeftInner {
+	width: 5px;
+	height: 5px;
+	overflow: hidden;
+}
+
+* html .gwt-MenuBarPopup .menuPopupTopRightInner {
+	width: 8px;
+	height: 5px;
+	overflow: hidden;
+}
+
+* html .gwt-MenuBarPopup .menuPopupBottomLeftInner {
+	width: 5px;
+	height: 8px;
+	overflow: hidden;
+}
+
+* html .gwt-MenuBarPopup .menuPopupBottomRightInner {
+	width: 8px;
+	height: 8px;
+	overflow: hidden;
+}
+
+.gwt-PasswordTextBox {
+	padding: 2px;
+}
+
+.gwt-PasswordTextBox-readonly {
+	color: #888;
+}
+
+.gwt-PopupPanel {
+	border: 3px solid #C3D9FF;
+	padding: 3px;
+	background: white;
+}
+
+.gwt-DecoratedPopupPanel .popupContent {
+	
+}
+
+.gwt-DecoratedPopupPanel .popupMiddleCenter {
+	padding: 3px;
+	background: #d0e4f6;
+}
+
+.gwt-DecoratedPopupPanel .popupTopCenter {
+	background: url(images/hborder.png) repeat-x;
+}
+
+.gwt-DecoratedPopupPanel .popupBottomCenter {
+	background: url(images/hborder.png) repeat-x 0px -4px;
+	-background: url(images/hborder_ie6.png) repeat-x 0px -4px;
+}
+
+.gwt-DecoratedPopupPanel .popupMiddleLeft {
+	background: url(images/vborder.png) repeat-y;
+}
+
+.gwt-DecoratedPopupPanel .popupMiddleRight {
+	background: url(images/vborder.png) repeat-y -4px 0px;
+	-background: url(images/vborder_ie6.png) repeat-y -4px 0px;
+}
+
+.gwt-DecoratedPopupPanel .popupTopLeftInner {
+	width: 5px;
+	height: 5px;
+	zoom: 1;
+}
+
+.gwt-DecoratedPopupPanel .popupTopRightInner {
+	width: 8px;
+	height: 5px;
+	zoom: 1;
+}
+
+.gwt-DecoratedPopupPanel .popupBottomLeftInner {
+	width: 5px;
+	height: 8px;
+	zoom: 1;
+}
+
+.gwt-DecoratedPopupPanel .popupBottomRightInner {
+	width: 8px;
+	height: 8px;
+	zoom: 1;
+}
+
+.gwt-DecoratedPopupPanel .popupTopLeft {
+	background: url(images/corner.png) no-repeat 0px -10px;
+	-background: url(images/corner_ie6.png) no-repeat 0px -10px;
+}
+
+.gwt-DecoratedPopupPanel .popupTopRight {
+	background: url(images/corner.png) no-repeat -5px -10px;
+	-background: url(images/corner_ie6.png) no-repeat -5px -10px;
+}
+
+.gwt-DecoratedPopupPanel .popupBottomLeft {
+	background: url(images/corner.png) no-repeat 0px -15px;
+	-background: url(images/corner_ie6.png) no-repeat 0px -15px;
+}
+
+.gwt-DecoratedPopupPanel .popupBottomRight {
+	background: url(images/corner.png) no-repeat -5px -15px;
+	-background: url(images/corner_ie6.png) no-repeat -5px -15px;
+}
+
+* html .gwt-DecoratedPopupPanel .popupTopLeftInner {
+	width: 5px;
+	height: 5px;
+	overflow: hidden;
+}
+
+* html .gwt-DecoratedPopupPanel .popupTopRightInner {
+	width: 8px;
+	height: 5px;
+	overflow: hidden;
+}
+
+* html .gwt-DecoratedPopupPanel .popupBottomLeftInner {
+	width: 5px;
+	height: 8px;
+	overflow: hidden;
+}
+
+* html .gwt-DecoratedPopupPanel .popupBottomRightInner {
+	width: 8px;
+	height: 8px;
+	overflow: hidden;
+}
+
+.gwt-PopupPanelGlass {
+	background-color: #000;
+	opacity: 0.3;
+	filter: alpha(opacity = 30);
+}
+
+.gwt-PushButton-up,.gwt-PushButton-up-hovering,.gwt-PushButton-up-disabled,.gwt-PushButton-down,.gwt-PushButton-down-hovering,.gwt-PushButton-down-disabled
+	{
+	margin: 0;
+	text-decoration: none;
+	background: url("images/hborder.png") repeat-x 0px -27px;
+}
+
+.gwt-PushButton-up,.gwt-PushButton-up-hovering,.gwt-PushButton-up-disabled
+	{
+	padding: 3px 5px 3px 5px;
+}
+
+.gwt-PushButton-up {
+	border: 1px outset #ccc;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-PushButton-up-hovering {
+	border: 1px outset;
+	border-color: #9cf #69e #69e #7af;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-PushButton-up-disabled {
+	border: 1px outset #ccc;
+	cursor: default;
+	opacity: .5;
+	filter: alpha(opacity = 40);
+	zoom: 1;
+}
+
+.gwt-PushButton-down,.gwt-PushButton-down-hovering,.gwt-PushButton-down-disabled
+	{
+	padding: 4px 4px 2px 6px;
+}
+
+.gwt-PushButton-down {
+	border: 1px inset #666;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-PushButton-down-hovering {
+	border: 1px inset;
+	border-color: #9cf #69e #69e #7af;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-PushButton-down-disabled {
+	border: 1px outset #ccc;
+	cursor: default;
+	opacity: 0.5;
+	filter: alpha(opacity = 40);
+	zoom: 1;
+}
+
+.gwt-RadioButton {
+	
+}
+
+.gwt-RadioButton-disabled {
+	color: #888;
+}
+
+.gwt-RichTextArea {
+	
+}
+
+.hasRichTextToolbar {
+	border: 0px;
+}
+
+.gwt-RichTextToolbar {
+	background: #e3e8f3 url(images/hborder.png) repeat-x 0px -2003px;
+	border-bottom: 1px solid #BBBBBB;
+	padding: 3px;
+	margin: 0px;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-up {
+	padding: 0px 1px 0px 0px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-up-hovering {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 1px 0px 0px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-down {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 0px 0px 1px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 0px 0px 1px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-up {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 1px 0px 0px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-up-hovering {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 1px 0px 0px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-down {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 0px 0px 1px;
+	border-width: 1px;
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-down-hovering {
+	margin-right: 4px;
+	margin-bottom: 4px;
+	padding: 0px 0px 0px 1px;
+	border-width: 1px;
+}
+
+.gwt-StackPanel {
+	border-bottom: 1px solid #bbbbbb;
+}
+
+.gwt-StackPanel .gwt-StackPanelItem {
+	cursor: pointer;
+	cursor: hand;
+	font-weight: bold;
+	font-size: 1.3em;
+	padding: 3px;
+	border: 1px solid #bbbbbb;
+	border-bottom: 0px;
+	background: #d3def6 url(images/hborder.png) repeat-x 0px -989px;
+}
+
+.gwt-StackPanel .gwt-StackPanelContent {
+	border: 1px solid #bbbbbb;
+	border-bottom: 0px;
+	background: white;
+	padding: 2px 2px 10px 5px;
+}
+
+.gwt-DecoratedStackPanel {
+	border-bottom: 1px solid #bbbbbb;
+}
+
+.gwt-DecoratedStackPanel .gwt-StackPanelContent {
+	border: 1px solid #bbbbbb;
+	border-bottom: 0px;
+	background: white;
+	padding: 2px 2px 10px 5px;
+}
+
+.gwt-DecoratedStackPanel .gwt-StackPanelItem {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-DecoratedStackPanel .stackItemTopLeft,.gwt-DecoratedStackPanel .stackItemTopRight
+	{
+	height: 6px;
+	width: 6px;
+	zoom: 1;
+}
+
+.gwt-DecoratedStackPanel .stackItemTopLeft {
+	border-left: 1px solid #bbbbbb;
+	background: #d3def6 url(images/corner.png) no-repeat 0px -49px;
+	-background: #d3def6 url(images/corner_ie6.png) no-repeat 0px -49px;
+}
+
+.gwt-DecoratedStackPanel .stackItemTopRight {
+	border-right: 1px solid #bbbbbb;
+	background: #d3def6 url(images/corner.png) no-repeat -6px -49px;
+	-background: #d3def6 url(images/corner_ie6.png) no-repeat -6px -49px;
+}
+
+.gwt-DecoratedStackPanel .stackItemTopLeftInner,.gwt-DecoratedStackPanel .stackItemTopRightInner
+	{
+	width: 1px;
+	height: 1px;
+}
+
+* html .gwt-DecoratedStackPanel .stackItemTopLeftInner,* html .gwt-DecoratedStackPanel .stackItemTopRightInner
+	{
+	width: 6px;
+	height: 6px;
+	overflow: hidden;
+}
+
+.gwt-DecoratedStackPanel .stackItemTopCenter {
+	background: url(images/hborder.png) 0px -21px repeat-x;
+}
+
+.gwt-DecoratedStackPanel .stackItemMiddleLeft {
+	background: #d3def6 url(images/hborder.png) repeat-x 0px -989px;
+	border-left: 1px solid #bbbbbb;
+}
+
+.gwt-DecoratedStackPanel .stackItemMiddleLeftInner,.gwt-DecoratedStackPanel .stackItemMiddleRightInner
+	{
+	width: 1px;
+	height: 1px;
+}
+
+.gwt-DecoratedStackPanel .stackItemMiddleRight {
+	background: #d3def6 url(images/hborder.png) repeat-x 0px -989px;
+	border-right: 1px solid #bbbbbb;
+}
+
+.gwt-DecoratedStackPanel .stackItemMiddleCenter {
+	font-weight: bold;
+	font-size: 1.3em;
+	background: #d3def6 url(images/hborder.png) repeat-x 0px -989px;
+}
+
+.gwt-DecoratedStackPanel .gwt-StackPanelItem-first .stackItemTopRight,.gwt-DecoratedStackPanel .gwt-StackPanelItem-first .stackItemTopLeft
+	{
+	border: 0px;
+	background-color: white;
+}
+
+.gwt-DecoratedStackPanel .gwt-StackPanelItem-below-selected .stackItemTopLeft,.gwt-DecoratedStackPanel .gwt-StackPanelItem-below-selected .stackItemTopRight
+	{
+	background-color: white;
+}
+
+.gwt-SuggestBox {
+	padding: 2px;
+}
+
+.gwt-SuggestBoxPopup {
+	margin-left: 3px;
+}
+
+.gwt-SuggestBoxPopup .item {
+	padding: 2px 6px;
+	color: #424242;
+	cursor: default;
+}
+
+.gwt-SuggestBoxPopup .item-selected {
+	background: #b7d6f6;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupContent {
+	background: white;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupTopCenter {
+	background: url(images/hborder.png) repeat-x;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupBottomCenter {
+	background: url(images/hborder.png) repeat-x 0px -4px;
+	-background: url(images/hborder_ie6.png) repeat-x 0px -4px;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupMiddleLeft {
+	background: url(images/vborder.png) repeat-y;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupMiddleRight {
+	background: url(images/vborder.png) repeat-y -4px 0px;
+	-background: url(images/vborder_ie6.png) repeat-y -4px 0px;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupTopLeftInner {
+	width: 5px;
+	height: 5px;
+	zoom: 1;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupTopRightInner {
+	width: 8px;
+	height: 5px;
+	zoom: 1;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupBottomLeftInner {
+	width: 5px;
+	height: 8px;
+	zoom: 1;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupBottomRightInner {
+	width: 8px;
+	height: 8px;
+	zoom: 1;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupTopLeft {
+	background: url(images/corner.png) no-repeat 0px -23px;
+	-background: url(images/corner_ie6.png) no-repeat 0px -23px;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupTopRight {
+	background: url(images/corner.png) no-repeat -5px -23px;
+	-background: url(images/corner_ie6.png) no-repeat -5px -23px;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupBottomLeft {
+	background: url(images/corner.png) no-repeat 0px -28px;
+	-background: url(images/corner_ie6.png) no-repeat 0px -28px;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupBottomRight {
+	background: url(images/corner.png) no-repeat -5px -28px;
+	-background: url(images/corner_ie6.png) no-repeat -5px -28px;
+}
+
+* html .gwt-SuggestBoxPopup .suggestPopupTopLeftInner {
+	width: 5px;
+	height: 5px;
+	overflow: hidden;
+}
+
+* html .gwt-SuggestBoxPopup .suggestPopupTopRightInner {
+	width: 8px;
+	height: 5px;
+	overflow: hidden;
+}
+
+* html .gwt-SuggestBoxPopup .suggestPopupBottomLeftInner {
+	width: 5px;
+	height: 8px;
+	overflow: hidden;
+}
+
+* html .gwt-SuggestBoxPopup .suggestPopupBottomRightInner {
+	width: 8px;
+	height: 8px;
+	overflow: hidden;
+}
+
+.gwt-TabBar {
+	
+}
+
+.gwt-TabBar .gwt-TabBarFirst {
+	width: 5px; /* first tab distance from the left */
+}
+
+.gwt-TabBar .gwt-TabBarRest {
+	
+}
+
+.gwt-TabBar .gwt-TabBarItem {
+	margin-left: 6px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+	cursor: hand;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	background: #d0e4f6;
+}
+
+.gwt-TabBar .gwt-TabBarItem-selected {
+	cursor: default;
+	background: #92c1f0;
+}
+
+.gwt-TabBar .gwt-TabBarItem-disabled {
+	cursor: default;
+	color: #999999;
+}
+
+.gwt-TabPanel {
+	
+}
+
+.gwt-TabPanelBottom {
+	border-color: #92c1f0;
+	border-style: solid;
+	border-width: 3px 2px 2px;
+	overflow: hidden;
+	padding: 6px;
+}
+
+.gwt-DecoratedTabBar {
+	
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarFirst {
+	width: 5px; /* first tab distance from the left */
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarRest {
+	
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem {
+	border-collapse: collapse;
+	margin-left: 6px;
+}
+
+.gwt-DecoratedTabBar .tabTopCenter {
+	padding: 0px;
+	background: #d0e4f6;
+}
+
+.gwt-DecoratedTabBar .tabTopLeft,.gwt-DecoratedTabBar .tabTopRight {
+	padding: 0px;
+	zoom: 1;
+}
+
+.gwt-DecoratedTabBar .tabTopLeftInner,.gwt-DecoratedTabBar .tabTopRightInner
+	{
+	width: 6px;
+	height: 6px;
+}
+
+.gwt-DecoratedTabBar .tabTopLeft {
+	background: url(images/corner.png) no-repeat 0px -55px;
+	-background: url(images/corner_ie6.png) no-repeat 0px -55px;
+}
+
+.gwt-DecoratedTabBar .tabTopRight {
+	background: url(images/corner.png) no-repeat -6px -55px;
+	-background: url(images/corner_ie6.png) no-repeat -6px -55px;
+}
+
+* html .gwt-DecoratedTabBar .tabTopLeftInner,* html .gwt-DecoratedTabBar .tabTopRightInner
+	{
+	width: 6px;
+	height: 6px;
+	overflow: hidden;
+}
+
+.gwt-DecoratedTabBar .tabMiddleLeft,.gwt-DecoratedTabBar .tabMiddleRight
+	{
+	width: 6px;
+	padding: 0px;
+	background: #d0e4f6;
+}
+
+.gwt-DecoratedTabBar .tabMiddleLeftInner,.gwt-DecoratedTabBar .tabMiddleRightInner
+	{
+	width: 1px;
+	height: 1px;
+}
+
+.gwt-DecoratedTabBar .tabMiddleCenter {
+	padding: 0px 4px 2px 4px;
+	cursor: pointer;
+	cursor: hand;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	background: #d0e4f6;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopCenter {
+	background: #92c1f0;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopLeft {
+	background-position: 0px -61px;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopRight {
+	background-position: -6px -61px;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleLeft,.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleRight
+	{
+	background: #92c1f0;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleCenter {
+	cursor: default;
+	background: #92c1f0;
+}
+
+.gwt-DecoratedTabBar .gwt-TabBarItem-disabled .tabMiddleCenter {
+	cursor: default;
+	color: #999999;
+}
+
+.gwt-TextArea {
+	padding: 2px;
+}
+
+.gwt-TextArea-readonly {
+	color: #888;
+}
+
+.gwt-TextBox {
+	padding: 2px;
+}
+
+.gwt-TextBox-readonly {
+	color: #888;
+}
+
+.gwt-ToggleButton-up,.gwt-ToggleButton-up-hovering,.gwt-ToggleButton-up-disabled,.gwt-ToggleButton-down,.gwt-ToggleButton-down-hovering,.gwt-ToggleButton-down-disabled
+	{
+	margin: 0;
+	text-decoration: none;
+	background: url("images/hborder.png") repeat-x 0px -27px;
+}
+
+.gwt-ToggleButton-up,.gwt-ToggleButton-up-hovering,.gwt-ToggleButton-up-disabled
+	{
+	padding: 3px 5px 3px 5px;
+}
+
+.gwt-ToggleButton-up {
+	border: 1px outset #ccc;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-ToggleButton-up-hovering {
+	border: 1px outset;
+	border-color: #9cf #69e #69e #7af;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-ToggleButton-up-disabled {
+	border: 1px outset #ccc;
+	cursor: default;
+	opacity: .5;
+	zoom: 1;
+	filter: alpha(opacity = 40);
+}
+
+.gwt-ToggleButton-down,.gwt-ToggleButton-down-hovering,.gwt-ToggleButton-down-disabled
+	{
+	padding: 4px 4px 2px 6px;
+}
+
+.gwt-ToggleButton-down {
+	background-position: 0 -513px;
+	border: 1px inset #ccc;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-ToggleButton-down-hovering {
+	background-position: 0 -513px;
+	border: 1px inset;
+	border-color: #9cf #69e #69e #7af;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-ToggleButton-down-disabled {
+	background-position: 0 -513px;
+	border: 1px inset #ccc;
+	cursor: default;
+	opacity: .5;
+	zoom: 1;
+	filter: alpha(opacity = 40);
+}
+
+.gwt-Tree+div {
+	padding: 0;
+	margin: 0;
+}
+
+.gwt-Tree .gwt-TreeItem {
+	padding: 1px 0px;
+	margin: 0px;
+	white-space: nowrap;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.gwt-Tree .gwt-TreeItem-selected {
+	background: #93c2f1 url(images/hborder.png) repeat-x 0px -1463px;
+}
+
+.gwt-TreeItem .gwt-RadioButton input,.gwt-TreeItem .gwt-CheckBox input {
+	margin-left: 0px;
+}
+
+* html .gwt-TreeItem .gwt-RadioButton input,* html .gwt-TreeItem .gwt-CheckBox input
+	{
+	margin-left: -4px;
+}
+
+.gwt-DateBox input {
+	width: 8em;
+}
+
+.dateBoxFormatError {
+	background: #ffcccc;
+}
+
+.dateBoxPopup {
+	
+}
+
+.gwt-DatePicker {
+	border: 1px solid #A2BBDD;
+	cursor: default;
+	width: 180px;
+	font-size: 12px;
+}
+
+.gwt-DatePicker td,.datePickerMonthSelector td:focus {
+	outline: none
+}
+
+.datePickerDays {
+	width: 100%;
+	background: white;
+}
+
+.datePickerDay,.datePickerWeekdayLabel,.datePickerWeekendLabel {
+	text-align: center;
+	padding: 4px;
+	outline: none;
+}
+
+.datePickerWeekdayLabel,.datePickerWeekendLabel {
+	background: #C3D9FF;
+	padding: 0px 4px 2px;
+	cursor: default;
+}
+
+.datePickerDay {
+	padding: 4px;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.datePickerDayIsToday {
+	border: 1px solid black;
+	padding: 3px;
+}
+
+.datePickerDayIsWeekend {
+	background: #EEEEEE;
+}
+
+.datePickerDayIsFiller {
+	color: #888888;
+}
+
+.datePickerDayIsValue {
+	background: #aaccee;
+}
+
+.datePickerDayIsDisabled {
+	color: #AAAAAA;
+	font-style: italic;
+}
+
+.datePickerDayIsHighlighted {
+	background: #F0E68C;
+}
+
+.datePickerDayIsValueAndHighlighted {
+	background: #bbddd9;
+}
+
+.datePickerMonthSelector {
+	background: #C3D9FF;
+	width: 100%;
+}
+
+td.datePickerMonth {
+	text-align: center;
+	vertical-align: center;
+	white-space: nowrap;
+	font-weight: bold;
+	color: blue;
+}
+
+.datePickerPreviousButton,.datePickerNextButton {
+	line-height: 1em;
+	color: blue;
+	cursor: hand;
+	cursor: pointer;
+	padding: 0px 4px;
+	font-size: 16px;
+}
+
+.gwt-StackLayoutPanel {
+	border-bottom: 1px solid #bbbbbb;
+}
+
+.gwt-StackLayoutPanel .gwt-StackLayoutPanelHeader {
+	cursor: pointer;
+	cursor: hand;
+	font-weight: bold;
+	font-size: 1.3em;
+	padding: 3px;
+	border: 1px solid #bbbbbb;
+	border-bottom: 0px;
+	background: #d3def6 url(images/hborder.png) repeat-x 0px -989px;
+}
+
+.gwt-StackLayoutPanel .gwt-StackLayoutPanelHeader-hovering {
+	background: #d3def6 url(images/hborder.png) repeat-x 0px -1464px;
+}
+
+.gwt-StackLayoutPanel .gwt-StackLayoutPanelContent {
+	border: 1px solid #bbbbbb;
+	border-bottom: 0px;
+	background: white;
+	padding: 2px 2px 10px 5px;
+}
+
+.gwt-TabLayoutPanel {
+	padding-top: 0px;
+	margin: 0px;
+}
+
+/*tap panel 的主样式 */
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
+    background: none repeat scroll 0 0 #CCCCCC;
+    padding-left: 5px;
+    padding-top: 6px;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelContent {
+	border: 1px solid #9BB1BE;
+	border-top: none;
+	overflow: hidden;
+	padding: 6px;
+	padding-top: 0px;
+	background-color: #ffffff;
+}
+/* tap panel 未被选中的样式*/
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+    background: none repeat scroll 0 0 #8E8E8E;
+    border-radius: 3px 3px 0 0;
+    color: white;
+    cursor: pointer;
+    font-weight: normal;
+    margin-left: 4px;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+/* tap panel 被选中的样式*/
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
+
+    background: none repeat scroll 0 0 white;
+    color: #333333;
+    cursor: default;
+    font-weight: bold;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab div.leftImg {
+	background: url(images/tabs_down-left.jpg) no-repeat;
+	width: 5px;
+	height: 33px;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected div.leftImg {
+	background: url(images/tabs_over-left.jpg) no-repeat;
+	width: 5px;
+	height: 33px;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab div.rightImg {
+	background: url(images/tabs_down-right.jpg) no-repeat;
+	width: 5px;
+	height: 33px;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected div.rightImg {
+	background: url(images/tabs_over-right.jpg) no-repeat;
+	width: 5px;
+	height: 33px;
+}
+/* tab panel 边上那个X的样式和图片*/
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabInner div.close {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: transparent url(images/close.jpg) no-repeat scroll 0 0;
+	margin-left: 5px;
+	margin-top: 8px;
+	height: 15px;
+	/*left:8px;*/
+	position: relative;
+	/*top: -5px;*/
+	width: 15px;
+}
+/* tab title*/
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabInner div.tabTitle {
+	margin-left: 2px;
+	margin-top: 7px;
+}
+
+.gwt-TabLayoutPanel .gwt-TabLayoutPanelTabInner td {
+	padding: 0;
+}
+
+.gwt-SplitLayoutPanel-HDragger {
+	background: #d0e4f6 url(images/splitPanelThumb.png) center center
+		no-repeat;
+	cursor: col-resize;
+}
+
+.gwt-SplitLayoutPanel-VDragger {
+	background: #d0e4f6 url(images/splitPanelThumb.png) center center
+		no-repeat;
+	cursor: row-resize;
+}
+
+@
+external .gwt-menu-Button ;
+
+.gwt-menu-Button {
+	border: none;
+	border-top: 1px solid #9bb1be;
+	font-size: 12px;
+	background-image: url(images/private/nav_dau.jpg);
+	background-color: #EAEAEA;
+	padding: 0px 0 0 33px;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	clear: both;
+	cursor: pointer;
+	color: green;
+	text-align: left;
+}
+
+.gwt-menu-Button:active {
+	border: 1px inset #ccc;
+}
+
+.gwt-menu-Button:hover {
+	border-color: #9cf #69e #69e #7af;
+}
+
+.gwt-menu-Button[disabled] {
+	cursor: default;
+	color: #888;
+}
+
+.gwt-menu-Button[disabled]:hover {
+	border: 1px outset #ccc;
+}
+
+.gwt-DialogBox .left {
+	background: url(images/show_top01.jpg) no-repeat;
+	width: 5px;
+	height: 29px;
+}
+
+.gwt-DialogBox .right {
+	background: url(images/show_top03.jpg) no-repeat;
+	width: 5px;
+	height: 29px;
+}
+
+.gwt-DialogBox .close {
+	background: url(images/close.jpg) no-repeat;
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer
+}
+
+.gwt-DialogBox .closeover {
+	background: url(images/closeover.jpg) no-repeat;
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer
+}
+
+.gwt-DialogBox .closedown {
+	background: url(images/closedown.jpg) no-repeat;
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer
+}
+
+td {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+div {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+/* suggestbox */
+/* Example tokeninput style #2: Facebook style */
+ul.token-input-list-facebook {
+	border: 1px solid #ccc;
+	width: 120px;
+	color: #666;
+	overflow: hidden;
+	height: auto !important;
+	border: 1px solid #CCCCCC;
+	cursor: text;
+	font-size: 12px;
+	font-family: Verdana;
+	min-height: 1px;
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+ul.token-input-list-facebook {
+	list-style-type: none;
+}
+
+ul.token-input-list-facebook li input {
+	border: 0;
+	width: 12px;
+	padding: 4px 0px;
+	background-color: white;
+	margin: 2px 0;
+}
+
+li.token-input-token-facebook {
+	overflow: hidden;
+	height: auto !important;
+	height: 1%;
+	margin: 3px;
+	padding: 1px 3px;
+	background-color: #eff2f7;
+	color: #000;
+	cursor: default;
+	border: 1px solid #ccd5e4;
+	font-size: 12px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	float: left;
+}
+
+li.token-input-token-facebook p {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+li.token-input-token-facebook span {
+	color: #a6b3cf;
+	margin-left: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	float: left;
+}
+
+li.token-input-selected-token-facebook {
+	background-color: #5670a6;
+	border: 1px solid #CCCCCC;
+	color: #fff;
+}
+
+li.token-input-input-token-facebook {
+	float: left;
+}
+
+/* style for ComboTree */
+.cr-ComboTree {
+	width: 150px;
+	padding: 2px;
+}
+
+.cr-ComboTreePopup {
+	margin-left: 3px;
+}
+
+.cr-ComboTreePopup .item {
+	padding: 2px 6px;
+	color: #424242;
+	cursor: default;
+}
+
+.cr-ComboTreePopup .item-selected {
+	background: #b7d6f6;
+}
+
+.cr-ComboTreePopup .popupContent {
+	background: white;
+}
+
+.cr-ComboTreePopup .popupTopCenter {
+	background: url(images/hborder.png) repeat-x;
+}
+
+.cr-ComboTreePopup .popupBottomCenter {
+	background: url(images/hborder.png) repeat-x 0px -4px;
+	-background: url(images/hborder_ie6.png) repeat-x 0px -4px;
+}
+
+.cr-ComboTreePopup .popupMiddleLeft {
+	background: url(images/vborder.png) repeat-y;
+}
+
+.cr-ComboTreePopup .popupMiddleRight {
+	background: url(images/vborder.png) repeat-y -4px 0px;
+	-background: url(images/vborder_ie6.png) repeat-y -4px 0px;
+}
+
+.cr-ComboTreePopup .popupTopLeftInner {
+	width: 5px;
+	height: 5px;
+	zoom: 1;
+}
+
+.cr-ComboTreePopup .popupTopRightInner {
+	width: 8px;
+	height: 5px;
+	zoom: 1;
+}
+
+.cr-ComboTreePopup .popupBottomLeftInner {
+	width: 5px;
+	height: 8px;
+	zoom: 1;
+}
+
+.cr-ComboTreePopup .popupBottomRightInner {
+	width: 8px;
+	height: 8px;
+	zoom: 1;
+}
+
+.cr-ComboTreePopup .popupTopLeft {
+	background: url(images/corner.png) no-repeat 0px -23px;
+	-background: url(images/corner_ie6.png) no-repeat 0px -23px;
+}
+
+.cr-ComboTreePopup .popupTopRight {
+	background: url(images/corner.png) no-repeat -5px -23px;
+	-background: url(images/corner_ie6.png) no-repeat -5px -23px;
+}
+
+.cr-ComboTreePopup .popupBottomLeft {
+	background: url(images/corner.png) no-repeat 0px -28px;
+	-background: url(images/corner_ie6.png) no-repeat 0px -28px;
+}
+
+.cr-ComboTreePopup .popupBottomRight {
+	background: url(images/corner.png) no-repeat -5px -28px;
+	-background: url(images/corner_ie6.png) no-repeat -5px -28px;
+}
+
+.gwt-ProgressBar-shell {
+	border: 1px solid #d6d6d6;
+	background-color: :#f6f6f6;
+	height: 13pt;
+	width: 50%;
+}
+
+.gwt-ProgressBar-shell .gwt-ProgressBar-bar {
+	background-color: #a9fe93;
+}
+
+.gwt-ProgressBar-shell .gwt-ProgressBar-text {
+	padding: 0px;
+	margin: 0px;
+	color: black;
+}
+/**hidden **/
+.hiddenMe {
+	display: none;
+}
+.margin-left0 {
+	margin-left: 0px;
+}
+.margin-left0text {
+	margin-left: 0px;
+	 text-align: center;
+}
+.margin-right0 {
+	margin-right: 0px;
+}
+.margin-right0padding {
+	margin-right: 0px;
+	padding-left: 15px;
+}
+
+.padding-top0 {
+	padding-top: 0px;
+}
+.paddingleft5{
+	padding-left: 15px;
+}
+.floatleftwidth{
+	float: left;
+	width: 100%;
+}
+.border0{
+	border: 0 none;
+}
+.margin0{
+	overflow:hidden;width:400px;margin:0px;position:relative;
+}
+
+
+
+/** loading background **/
+.cr-loading {
+	background: url(images/ajax-loader.gif) no-repeat 50% 50%;
+	color: #174a77;
+	font-size: 12px;
+	position: relative;
+	padding: 0px 0px 0px 0px;
+	line-height: 20px;
+	text-align: center;
+}
+
+/*menu-link*/
+.menu-link {
+	display: block;
+	border-bottom: 1px solid #EAEAEA;
+	padding: 8px 0 8px 35px;
+	background-color: #CCCCCC;
+	color: #333333;
+	text-decoration: none;
+	font-weight: normal;
+}
+/*blue menu*/
+
+#menu2 .menu-link {
+	display: block;
+	border-bottom: 1px solid #EAEAEA;
+	padding: 8px 0 8px 30px;
+	background-color: #d7e9fd;
+	color: #333333;
+	text-decoration: none;
+	font-weight: normal;
+	
+}
+.menu-link:hover {
+	background-color: #ABAAAA;
+	color: #333333;
+	text-decoration: none;
+}
+
+.menu-selected,.menu-link:hover {
+	background-color: #75B528;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#rewardlist_page .pageon {
+	text-decoration: none;
+	background-color: #569B01;
+	color: #FFFFFF;
+}
+#rewardlist_page2 .pageon {
+	text-decoration: none;
+	background-color: #707070;
+	color: #FFFFFF;
+}
+#rewardlist_page .pagedisable{
+	border: 1px solid #C7C7C7;
+	color: #999999;
+}
+#rewardlist_page .pagedisable:hover,#a:hover  {
+	background-color:SeaShell;
+	cursor: default;
+}
+#rewardlist_page2 .pagedisable{
+	border: 1px solid #C7C7C7;
+	color: #999999;
+}
+#rewardlist_page2 .pagedisable:hover,#a:hover {
+	background-color:SeaShell;
+	cursor: default;
+}
+.searchStaff {
+	float: left;
+	height: 22px;
+	width: 200px;
+	color: #999999;
+	border: 1px solid #569A01;
+}
+
+.divTextLeft {
+	text-align: left;
+}
+.width500 {
+	width: 500px;
+}
+#rewardlist_page .pageon{text-decoration:none;background-color:#569B01;color:#FFFFFF;}
+#rewardlist_page .pagedisable{border:1px solid #C7C7C7;color:#999999;}
+#rewardlist_page .pagedisable:hover{}
+.searchStaff{float:left;height:22px;width:150px;border:1px solid #CCCCCC;}
+.divTextLeft{text-align: left;}
+
+.close-wrap{position:absolute;height:50px;right:0;top:1px;*top:2px;height:40px;line-height:40px;overflow:hidden;}
+.box-close{background:url(images/elt.png) no-repeat;background-position:-14px -116px;width:18px;height:18px;display:inline-block;cursor:pointer;vertical-align:middle;margin-right:15px;}
+.box-title-sep{width:1px;height:40px;display:inline-block;background-color:#fff;vertical-align:middle;margin-right:15px;}
+
+.breadcrumbsdiv{float:left;  padding-left: 3px;padding-right: 3px;}
+.breadcrumbsSpan{float:left;	font-size: 12px;}
+.breadcrumbsAnchor{float:left;	font-size: 12px;text-decoration: none;}
+.breadcrumbsAnchor:hover {font-size: 12px;color:blue;cursor: pointer;}
+
+.remark-text2{border:1px solid #C3C3C3;padding:3px 5px;width:738px;margin-top:10px;}
+
+
+.staffTextArea2{border:1px solid #CCCCCC;width:200px;}
+
+
+ul.token-input-list-facebook2 {
+	border: 1px solid #cccccc;
+	width: 350px;
+	color: #666;
+	overflow: hidden;
+	height: auto !important;
+	border: 1px solid #cccccc;
+	cursor: text;
+	font-size: 12px;
+	font-family: Verdana;
+	min-height: 1px;
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+
+ul.token-input-list-facebook2 {
+	list-style-type: none;
+}
+
+ul.token-input-list-facebook2 li input {
+	border: 0;
+	width: 12px;
+	padding: 4px 0px;
+	background-color: white;
+	margin: 2px 0;
+}
+li.token-input-token-facebook2 p {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+li.token-input-token-facebook2 span {
+	color: #a6b3cf;
+	margin-left: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.fontred{
+		color: red;
+}
+.remarkdiv{}
+
+
+ul.token-input-list-facebook3 {
+	border: 1px solid #ccc;
+	width: 518px;
+	color: #666;
+	overflow: hidden;
+	height: auto !important;
+	border: 1px solid #D7D7D7;
+	cursor: text;
+	font-size: 12px;
+	font-family: Verdana;
+	min-height: 1px;
+	z-index: 999;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+ul.token-input-list-facebook3 {
+	list-style-type: none;
+}
+
+ul.token-input-list-facebook3 li input {
+	border: 0;
+	width: 12px;
+	padding: 4px 0px;
+	background-color: white;
+	margin: 2px 0;
+}
+.labelText{ padding-right: 6px;}
+.acPandding{padding-left: 10px;}
+.redlable{color: red;padding-left: 20px;}
+
+.chooseBox {
+ 
+    width: 788px;
+}
+.chooseBox .theadWap {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") repeat-x scroll 0 -220px transparent;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+.chooseBox .theadWap .theadL {
+    float: left;
+    height: 30px;
+    margin: -1px 0 0 -1px;
+    position: relative;
+}
+.chooseBox .theadWap .theadL i {
+    float: left;
+    padding: 0 15px;
+}
+.chooseBox .theadWap .theadL i.cur {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -254px transparent;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #E7E7E7;
+    font-weight: 800;
+}
+.chooseBox .theadWap .theadL .icon {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -453px -288px transparent;
+    float: left;
+    height: 20px;
+    width: 12px;
+}
+.chooseBox .theadWap .theadLine {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -420px transparent;
+    float: left;
+    height: 29px;
+    margin-left: -3px;
+    overflow: hidden;
+    width: 2px;
+}
+.chooseBox .theadWap .theadR {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll left -421px transparent;
+    float: right;
+    line-height: 29px;
+    width: 74px;
+}
+.chooseBox .theadWap .theadR i.showTab {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -446px -390px transparent;
+    color: #333333;
+    cursor: pointer;
+    float: left;
+    height: 29px;
+    padding-left: 18px;
+    width: 54px;
+}
+.chooseBox .theadWap .theadR i.hiddTab {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -446px -369px transparent;
+    color: #333333;
+    cursor: pointer;
+    float: left;
+    height: 29px;
+    padding-left: 18px;
+    width: 54px;
+}
+.chooseBox .theadWap .theadR i a:hover {
+    text-decoration: none;
+}
+.chooseBox .getWap {
+    margin-top: -1px;
+    position: relative;
+    width: 788px;
+
+}
+.chooseBox .allBrand {
+    float: right;
+    height: 24px;
+    margin-bottom: -32px;
+    padding: 8px 5px 0 0;
+    position: relative;
+}
+.chooseBox .allBrand a {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -147px -289px transparent;
+    color: #333333;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding-left: 5px;
+    width: 64px;
+}
+.chooseBox .allBrand a:hover {
+    text-decoration: none;
+}
+.chooseBox .getParam {
+  
+    line-height: 18px;
+    margin: 0 10px;
+    padding: 7px 0 2px;
+    width: 768px;
+}
+.chooseBox .getParam span {
+    color: #777777;
+    float: left;
+    height: 18px;
+    overflow: hidden;
+    text-align: right;
+    width: 71px;
+}
+.chooseBox .getParam em.all {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -62px -592px transparent;
+
+    overflow: hidden;
+    width: 43px;
+}
+.chooseBox .getParam em.all a {
+    color: #0055AA;
+
+    height: 18px;
+    text-align: center;
+   
+}
+.chooseBox .getParam em.all a:hover {
+    background-color: #FEE8DA;
+    color: #FF6600;
+    text-decoration: none;
+}
+.chooseBox .getParam em.cur a {
+    background: none repeat scroll 0 0 #FF6600;
+    color: #FFFFFF;
+}
+.chooseBox .getParam em.cur a:hover {
+    background: none repeat scroll 0 0 #FF6600;
+    color: #FFFFFF;
+}
+.chooseBox .getParam dl {
+
+    width: 640px;
+}
+.chooseBox .getParam dd.less {
+    height: 24px;
+    overflow: hidden;
+}
+.chooseBox .getParam dd i {
+    float: left;
+    height: 24px;
+    white-space: nowrap;
+}
+.chooseBox .getParam dd i a {
+    color: #0055AA;
+    float: left;
+    height: 18px;
+    margin-right: 18px;
+    padding: 1px 3px 0;
+}
+.chooseBox .getParam dd i a:hover {
+    background-color: #FEE8DA;
+    color: #FF6600;
+    text-decoration: none;
+}
+.chooseBox .getParam dd i a.null {
+    color: #777777;
+}
+.chooseBox .getParam dd i a.null:hover {
+    background: none repeat scroll 0 0 transparent;
+    cursor: text;
+}
+.chooseBox .getParam dd i a.cur, .chooseBox .getParam dd i a.cur:hover {
+    background-color: #FF6600;
+    color: #FFFFFF;
+    margin-right: 4px;
+    padding-right: 17px;
+    position: relative;
+}
+.chooseBox .getParam dd i a.cur em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -87px -562px transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 13px;
+    position: absolute;
+    right: 2px;
+    top: 3px;
+    width: 13px;
+}
+.chooseBox .getParam dd i a.cur:hover em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -578px transparent;
+}
+.chooseBox .getParam dd i.on a.cur em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -578px transparent;
+}
+.chooseBox .getParam .moreitem {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -448px -495px transparent;
+    cursor: pointer;
+    float: right;
+    margin-top: -22px;
+    padding-left: 17px;
+    width: 35px;
+}
+.chooseBox .getParam .lessitem {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -448px -466px transparent;
+    cursor: pointer;
+    float: right;
+    margin-top: -22px;
+    padding-left: 17px;
+    width: 35px;
+}
+.chooseBox .getBrand dd {
+    width: 585px;
+}
+.chooseBox .getBrand .multi {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -449px -321px transparent;
+    cursor: pointer;
+    float: right;
+    margin-top: -22px;
+    padding-left: 17px;
+    width: 98px;
+}
+.chooseBox .getBrand .multi a {
+    color: #0055AA;
+}
+.chooseBox .getBrand .multi a:hover {
+ chooseBox #FF6600;
+    text-decoration: none;
+}
+.chooseBox .getBrand .exit {
+    display: none;
+}
+.chooseBox .getMulti {
+    background: none repeat scroll 0 0 #FFFBF0;
+    border: 1px solid #FF9900;
+    margin: 0;
+    padding: 6px 9px 2px;
+}
+.chooseBox .getMulti dd i a.cur em, .chooseBox .getMulti dd i a.cur:hover em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -594px transparent;
+}
+.chooseBox .getMulti .exit {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -89px -575px transparent;
+    display: block;
+    float: right;
+    margin: -22px -5px 0 0;
+    padding-left: 13px;
+    position: relative;
+}
+.chooseBox .getMulti .exit a, .chooseBox .getMulti .exit a:hover {
+    color: #FF6600;
+    text-decoration: none;
+}
+.chooseBox .getMulti .multi {
+    display: none;
+}
+.chooseBox .allDiv {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 510px;
+    z-index: 20;
+}
+.chooseBox .allDiv .allTad {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #D4E5F9;
+    border-color: #003398 #003398 -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    height: 21px;
+    margin-left: 440px;
+    margin-top: 0;
+    padding: 2px 2px 0;
+    position: relative;
+    width: 64px;
+}
+.chooseBox .allDiv .allTad a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    width: 64px;
+}
+.chooseBox .allDiv .allTad a:hover {
+    text-decoration: none;
+}
+.chooseBox .allDiv .allTad a em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -454px -403px transparent;
+    display: inline-block;
+    height: 7px;
+    margin-left: 3px;
+    width: 7px;
+}
+.chooseBox .allDiv .allFat {
+    background: none repeat scroll 0 0 #D4E5F9;
+    border: 1px solid #003398;
+    height: 224px;
+    margin-top: -1px;
+    overflow: hidden;
+    padding: 2px;
+    width: 504px;
+}
+.chooseBox .allDiv .allFat dl {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: 224px;
+    overflow: auto;
+    width: 504px;
+}
+.chooseBox .allDiv .allFat dd {
+    float: left;
+    line-height: 24px;
+    padding: 3px 0;
+    width: 484px;
+}
+.chooseBox .allDiv .allFat dd span {
+    color: #767676;
+    float: left;
+    font-family: "微软雅黑","黑体";
+    font-size: 14px;
+    font-weight: 700;
+    height: 24px;
+    padding-left: 16px;
+    width: 28px;
+}
+.chooseBox .allDiv .allFat dd i {
+    float: right;
+    overflow: hidden;
+    width: 440px;
+}
+.chooseBox .allDiv .allFat dd a {
+    color: #0055AA;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 6px;
+    margin-top: 6px;
+    padding: 0 4px;
+}
+.chooseBox .allDiv .allFat dd a.null {
+    color: #777777;
+}
+.chooseBox .allDiv .allFat dd a.null:hover {
+    background: none repeat scroll 0 0 transparent;
+    color: #777777;
+}
+.chooseBox .allDiv .allFat dd a:hover {
+    background-color: #FEE8DA;
+    color: #FF6600;
+    text-decoration: none;
+}
+.chooseBox .allDiv .allFat dd.dat1 {
+    background: none repeat scroll 0 0 #FAFAFA;
+}
+.chooseBox .selfBtn {
+    float: left;
+    line-height: 20px;
+    position: relative;
+    z-index: 10;
+}
+.chooseBox .selfBtn .defBtn {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -87px -313px transparent;
+    border-right: 1px solid #CDCDCD;
+    color: #333333;
+    display: inline-block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 15px 0 6px;
+    position: relative;
+    white-space: nowrap;
+}
+.chooseBox .selfBtn .defBtn:hover {
+    color: #333333;
+    text-decoration: none;
+}
+.chooseBox .selfBtn .defBtn em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -454px -382px transparent;
+    height: 4px;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 7px;
+}
+.chooseBox .priceDiv {
+    left: -999px;
+    position: absolute;
+    top: -999px;
+}
+.chooseBox .pricePos {
+    left: -1px;
+    top: -3px;
+}
+.chooseBox .priceDiv .priceTad {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #D4E5F9;
+    border-color: #003398 #003398 -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    float: left;
+    height: 20px;
+    margin-top: -112px;
+    padding: 2px 2px 0;
+    position: relative;
+}
+.chooseBox .priceDiv .priceTad a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-right: 0 none;
+    color: #333333;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 14px 0 4px;
+    white-space: nowrap;
+}
+.chooseBox .priceDiv .priceTad a:hover {
+    text-decoration: none;
+}
+.chooseBox .priceDiv .priceTad a em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -454px -403px transparent;
+    height: 4px;
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    width: 7px;
+}
+.chooseBox .priceDiv .priceFat {
+    background: none repeat scroll 0 0 #D4E5F9;
+    border: 1px solid #003398;
+    height: 84px;
+    margin-top: 21px;
+    overflow: hidden;
+    padding: 2px;
+    width: 254px;
+}
+.chooseBox .priceDiv .priceFat dl {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: 84px;
+    overflow: hidden;
+    width: 254px;
+}
+.chooseBox .priceDiv .priceFat dt {
+    float: right;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    padding-right: 15px;
+}
+.chooseBox .priceDiv .priceFat dt input {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -610px transparent;
+    border: medium none;
+    color: #8A3202;
+    cursor: pointer;
+    font-size: 12px;
+    height: 20px;
+    text-align: center;
+    width: 50px;
+}
+.chooseBox .priceDiv .priceFat dd {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    width: 110px;
+}
+.chooseBox .priceDiv .priceFat dd input {
+    vertical-align: middle;
+}
+.chooseBox .priceDiv .priceFat dd a:link, .chooseBox .priceDiv .priceFat dd a:visited {
+    text-decoration: none;
+}
+.chooseBox .priceDiv .priceFat dd.s5 a:link, .chooseBox .priceDiv .priceFat dd.s5 a:visited {
+    text-decoration: none;
+}
+.chooseBox .priceDiv .priceFat dd.s1 {
+    clear: both;
+    color: #767676;
+    float: left;
+    margin-right: 0;
+    padding-left: 11px;
+    width: 170px;
+}
+.chooseBox .priceDiv .priceFat dd.s1 input {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 3px;
+}
+.chooseBox .priceDiv .priceFat dd.s2 {
+    background: url("http://www1.pconline.com.cn/2011/product/img/imgv_kedubiao.gif") no-repeat scroll 10px 5px transparent;
+    height: 37px;
+    margin-right: 0;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+.chooseBox .priceDiv .priceFat .scroll_area {
+    background: url("http://www1.pconline.com.cn/2011/product/img/img_kedubiao_on.gif") repeat-x scroll 0 0 transparent;
+    font-size: 1px;
+    height: 4px;
+    position: absolute;
+    top: 24px;
+}
+.chooseBox .priceDiv .priceFat dd img {
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+}
+.chooseBox .hadWap {
+    color: #777777;
+    line-height: 18px;
+    margin: 0 10px;
+    padding: 8px 0;
+    width: 768px;
+}
+.chooseBox .hadWap a:hover {
+    text-decoration: none;
+}
+.chooseBox .hadWap .hadL {
+    float: left;
+    width: 700px;
+}
+.chooseBox .hadWap .hadL strong {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    text-align: right;
+    width: 68px;
+}
+.chooseBox .hadWap .hadL .choose {
+    float: left;
+    width: 632px;
+}
+.chooseBox .hadWap .hadL a:hover {
+    color: #FFFFFF;
+}
+.chooseBox .hadWap .hadL a {
+    background-color: #0055AA;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 18px;
+    margin: 0 10px 3px 0;
+    padding: 0 17px 0 4px;
+    position: relative;
+    white-space: nowrap;
+}
+.chooseBox .hadWap .hadL a em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -87px -562px transparent;
+    cursor: pointer;
+    height: 13px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 15px;
+}
+.chooseBox .hadWap .hadL a:hover em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -562px transparent;
+}
+.chooseBox .hadWap .hadL a.on em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -562px transparent;
+}
+.chooseBox .hadWap .hadL .num {
+    white-space: nowrap;
+}
+.chooseBox .hadWap .hadL .num i {
+    color: #CC0000;
+    font-size: 14px;
+    font-weight: 700;
+}
+.chooseBox .hadWap .hadR {
+    float: right;
+    height: 18px;
+    width: 68px;
+}
+.chooseBox .hadWap .hadR a {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -443px -348px transparent;
+    color: #333333;
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 20px;
+    width: 48px;
+}
+.chooseBox .hadWap .hadR a:hover {
+    color: #FF6600;
+}
+.chooseBox .hadWap, .chooseBox .getParam .clear {
+}
+.chooseBox .getAdvance {
+    border-bottom: 1px dashed #D1D1D1;
+    line-height: 22px;
+    margin: 0 10px;
+    overflow: hidden;
+    padding: 7px 0 2px;
+    width: 768px;
+}
+.chooseBox .getAdvance dt {
+    color: #777777;
+    float: left;
+    text-align: right;
+    width: 68px;
+}
+.chooseBox .getAdvance dd {
+    color: #0055AA;
+    float: left;
+    margin-left: -8px;
+    width: 708px;
+}
+.chooseBox .getAdvance dd i {
+    float: left;
+    height: 24px;
+    line-height: 22px;
+    min-width: 108px;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+.chooseBox .getAdvance dd input {
+    height: 15px;
+    margin: -2px 5px 0 0;
+    vertical-align: middle;
+    width: 13px;
+}
+.chooseBox .getAdvanceEx {
+    height: 48px;
+}
+.chooseBox .getAdvanceAuto {
+    height: auto;
+}
+.chooseBox .getAdvanceEx dd {
+    width: 680px;
+}
+.chooseBox .moreBrand {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -448px -495px transparent;
+    cursor: pointer;
+    float: right;
+    padding-left: 17px;
+    position: absolute;
+    right: 53px;
+    top: 33px;
+}
+.chooseBox .moreBrand-close {
+    background-position: -448px -467px;
+}
+.chooseBox .hadBtn {
+    padding: 11px 0;
+    text-align: center;
+}
+.chooseBox .hadBtn .queryBtn {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -469px transparent;
+    color: #8C3200;
+    display: inline-block;
+    font: 700 14px/29px 宋体,arial,sans-serif;
+    height: 29px;
+    width: 120px;
+}
+.chooseBox .hadBtn .queryBtn:hover {
+    text-decoration: none;
+}
+.chooseBox .getLine {
+    border-bottom: 1px solid #D1D1D1;
+}
+.chooseBoxEx .getParam dl {
+    width: 857px;
+}
+.chooseBoxEx .getParam {
+    width: 968px;
+}
+.chooseBoxEx, .chooseBoxEx .getWap {
+    width: 988px;
+}
+.chooseBoxEx .last {
+    border-bottom: medium none;
+}
+.chooseBoxEx .getParam dd i a em {
+    color: #777777;
+}
+.chooseBoxEx .getParam dd i a:hover em {
+    color: #FF6600;
+}
+.width0{width:0px;}
+
+
+
+
+
+
+.loadmask {
+    background-color: #CCCCCC;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.loadmask-msg {
+    left: 0;
+    padding: 1px;
+    position: absolute;
+    top: 0;
+    z-index: 20001;
+}
+.loadmask-msg div {
+    background: url("http://www.4008823823.com.cn/kfcios/images/loading.gif") no-repeat scroll 25px 0 transparent;
+    color: #222222;
+    cursor: wait;
+    font: 11px tahoma,arial,helvetica,sans-serif;
+    height: 16px;
+    padding: 2px 10px 5px 25px;
+    width: 16px;
+}
+.masked {
+    overflow: hidden !important;
+}
+.masked-relative {
+    position: relative !important;
+}
+.masked-hidden {
+    visibility: hidden !important;
+}
+* {
+    font-family: "宋体",Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #943E00;
+}
+
+.public_container {
+    margin: auto;
+    position: relative;
+    width: 1000px;
+}
+.Left_detail_css05 {
+    display: none;
+    height: 232px;
+    margin: -58px 0 0;
+    position: absolute;
+    text-align: left;
+    width: 388px;
+    z-index: 1;
+}
+.Left_detail_css05 #float_arrow01 {
+    padding-left: 20px;
+    width: 5px;
+}
+.header_box_logo {
+    float: left;
+    width: 201px;
+}
+.header_box_menu {
+    background: none repeat scroll 0 0 #DDDDDD;
+    float: right;
+    width: 792px;
+}
+.header_box_menu_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a1.gif") no-repeat scroll right top transparent;
+    height: 32px;
+}
+.header_box_menu_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a2.gif") no-repeat scroll right top transparent;
+    height: 30px;
+    line-height: 30px;
+}
+.header_box_menu_2_ul li {
+    float: left;
+    padding: 0 25px;
+    text-align: center;
+}
+.menu_line {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a3.gif") no-repeat scroll right top transparent;
+}
+a.menu_y:link, a.menu_y:active, a.menu_y:visited, a.menu_y:hover {
+    color: #E90000;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.menu_n:link, a.menu_n:active, a.menu_n:visited {
+    color: #934400;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.menu_n:hover {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu_y em, .menu_n em {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 100;
+}
+#clear_div {
+    clear: both;
+}
+.content_box {
+}
+.content_box .ltinc {
+    background: url("http://www.4008823823.com.cn/kfcios/imgnew/inc1.gif") no-repeat scroll 0 0 transparent;
+    height: 9px;
+    left: 196px;
+    overflow: hidden;
+    position: absolute;
+    top: 68px;
+    width: 12px;
+    z-index: 100;
+}
+.spx5px {
+    height: 5px;
+    overflow: hidden;
+}
+.content_box_left {
+    float: left;
+    width: 805px;
+}
+.content_box_right {
+    float: right;
+    width: 195px;
+}
+.banner_img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #FFD388;
+    height: 146px;
+    padding: 0;
+    width: 796px;
+}
+.banner_img img {
+    border: medium none;
+}
+.content_box_left_main {
+    margin-top: 5px;
+}
+.content_box_left_main_left {
+    background: none repeat scroll 0 0 #FEE7BE;
+    float: left;
+    position: relative;
+    width: 196px;
+}
+.order_right_box_c {
+    float: right;
+    width: 800px;
+}
+.content_box_left_main_right {
+    background: none repeat scroll 0 0 #FEE7BE;
+     float:left;
+    width: 604px;
+}
+.content_box_left_main_left_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a1_2.png") repeat-x scroll 0 0 transparent;
+    color: #E90000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 42px;
+    line-height: 40px;
+    overflow: hidden;
+    padding-left: 15px;
+    position: relative;
+}
+.content_box_left_main_left_h1_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a1_2.png") repeat scroll 0 0 transparent;
+    color: #E90000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 43px;
+    line-height: 40px;
+    overflow: hidden;
+    padding-left: 15px;
+    position: relative;
+}
+.content_box_left_main_left_h1 em, .content_box_left_main_left_h1_2 em {
+    color: #E90000;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    text-decoration: none;
+    top: 0;
+}
+.content_box_left_main_left_c {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a5_02_popoo.gif") repeat scroll 0 0 transparent;
+    display: block;
+    padding: 2px 10px 0;
+}
+.content_box_left_main_left_b {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a2.png") repeat-x scroll 0 0 transparent;
+    display: block;
+    height: 8px;
+    overflow: hidden;
+}
+.content_box_left_main_left_b_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a2_1.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 8px;
+    overflow: hidden;
+}
+.content_box_left_main_left_b_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a2.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 8px;
+    overflow: hidden;
+}
+.content_box_left_main_left_b_3 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a2_3.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 8px;
+    overflow: hidden;
+}
+.content_box_left_main_left_c_h2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a7.gif") no-repeat scroll 0 3px transparent;
+    font-size: 13px;
+    height: 26px;
+    line-height: 24px;
+    margin-top: 3px;
+    padding-left: 15px;
+    padding-top: 3px;
+    position: relative;
+}
+.content_box_left_main_left_c_h2 em {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+}
+.f16 {
+    font-size: 16px;
+}
+.f142 {
+    font-size: 14px;
+}
+.nav_left_ul li {
+    border-bottom: 1px dotted #BBA085;
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+}
+.nav_left_ul_cn li {
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+}
+.nav_left_ul_en li {
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+}
+.nav_left_n,.nav_left_n:link, .nav_left_n:visited, .nav_left_n:active {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a8.gif") no-repeat scroll 155px 8px transparent;
+    color: #943E00;
+    display: block;
+    font-size: 13px;
+    height: 24px;
+    line-height: 26px;
+    overflow: hidden;
+    padding-left: 15px;
+    text-decoration: none;
+}
+.nav_left_n:hover {
+	cursor:pointer;
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a9.gif") no-repeat scroll 0 0 transparent;
+}
+a.nav_left_y:link, a.nav_left_y:visited, a.nav_left_y:active {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a8.gif") no-repeat scroll 155px 8px transparent;
+    color: #943E00;
+    display: block;
+    font-size: 13px;
+    height: 24px;
+    line-height: 26px;
+    overflow: hidden;
+    padding-left: 15px;
+    text-decoration: none;
+}
+a.nav_left_y:hover {
+	cursor:pointer;
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a9.gif") no-repeat scroll 0 0 transparent;
+}
+.nav_left_ul li.on a {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a9.gif") no-repeat scroll 0 0 transparent;
+}
+.content_box_left_main_right_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a01.gif") no-repeat scroll center top transparent;
+    color: #E80000;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 0;
+    padding: 0 10px 0 4px;
+    text-align: right;
+}
+.content_box_left_main_right_h1 span {
+    display: block;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+}
+.content_box_left_main_right_h1 a:link {
+    color: #E80000;
+    font-size: 14px;
+    text-decoration: none;
+}
+.content_box_left_main_right_h1 a:visited {
+    color: #E80000;
+    font-size: 14px;
+    text-decoration: none;
+}
+.content_box_left_main_right_h1 a:hover {
+    color: #E80000;
+    font-size: 14px;
+    text-decoration: none;
+}
+.content_box_left_main_right_h1 a:active {
+    color: #E80000;
+    font-size: 14px;
+    text-decoration: none;
+}
+.content_box_left_main_right_h1_ul li {
+    float: left;
+    height: 34px;
+    margin-right: 5px;
+    position: relative;
+}
+a.nav_right_y:link, a.nav_right_y:active, a.nav_right_y:visited {
+    display: block;
+    height: 34px;
+    width: 170px;
+}
+a.nav_right_n:link, a.nav_right_n:active, a.nav_right_n:visited {
+    display: block;
+    height: 34px;
+    width: 190px;
+}
+.content_box_left_main_right_c {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b1.gif") repeat scroll 0 0 transparent;
+    display: block;
+    overflow: hidden;
+    padding-left: 2px;
+    width: 598px;
+}
+.content_box_left_main_right_b {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b2.gif") repeat scroll 0 0 transparent;
+    display: block;
+    height: 7px;
+    margin-top: 0;
+    overflow: hidden;
+}
+.content_box_left_main_right_c_ul {
+    margin: 0 0 0 5px;
+}
+.content_box_left_main_right_c_ul li {
+    background: none repeat scroll 0 0 #FFFDE4;
+    border: 1px solid #FBE8C0;
+    float: left;
+    height: 249px;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    overflow: hidden;
+    text-align: left;
+    width: 144px;
+}
+.content_box_left_main_right_c_ul_li_1 {
+    display: block;
+    height: 73px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+.content_box_left_main_right_c_ul_li_2 {
+    padding-bottom: 5px;
+    text-align: center;
+}
+.content_box_left_main_right_c_ul_li_2 img {
+    border: medium none;
+    margin-left: 5px;
+}
+.brand {
+    background: none repeat scroll 0 0 #FFC000;
+    color: #FFFFFF;
+}
+a.nav_red:link, a.nav_red:active, a.nav_red:visited {
+    color: #E40011;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.nav_red:hover {
+    color: #8E4400;
+    text-decoration: none;
+}
+.font_red {
+    color: #E40011;
+}
+.content_box_right_2 {
+    margin-top: 5px;
+}
+.content_box_right_dd {
+    margin-top: 0;
+}
+.content_box_right_2_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b6.gif") no-repeat scroll 0 0 transparent;
+    height: 42px;
+    overflow: hidden;
+}
+.content_box_right_NewCustomer_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a43.gif") no-repeat scroll 0 0 transparent;
+    height: 42px;
+    overflow: hidden;
+}
+.content_box_right_NewCustomer_h1 .nrlink {
+    float: right;
+    font-weight: 100;
+    height: 22px;
+    line-height: 22px;
+    padding: 7px 0 0;
+    width: 55px;
+}
+.content_box_right_dd_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/e3.gif") repeat scroll 0 0 transparent;
+    height: 42px;
+    line-height: 400px;
+    overflow: hidden;
+}
+.content_box_right_dd_h1_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/e8.gif") repeat scroll 0 0 transparent;
+    height: 42px;
+    line-height: 400px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.content_box_right_2_h1_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b6_2.gif") no-repeat scroll 0 0 transparent;
+    height: 42px;
+    line-height: 400px;
+    overflow: hidden;
+}
+.content_box_right_3_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/c2.gif") repeat scroll 0 0 transparent;
+    height: 42px;
+    line-height: 400px;
+    overflow: hidden;
+}
+.content_box_right_3_h1 .nrlink {
+    float: right;
+    font-weight: 100;
+    height: 22px;
+    line-height: 22px;
+    padding: 7px 0 0;
+    width: 55px;
+}
+.content_box_right_2_c {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b7.gif") repeat-y scroll 0 0 transparent;
+    display: block;
+    padding: 0 8px;
+}
+.content_box_right_dd_c {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b7.gif") repeat scroll 0 0 transparent;
+    display: block;
+    padding: 0 4px 0 3px;
+}
+.content_box_right_dd_c_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b7.gif") repeat scroll 0 0 transparent;
+    display: block;
+    padding: 0 10px;
+}
+.content_box_right_2_b {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b8.gif") repeat scroll 0 0 transparent;
+    display: block;
+    height: 10px;
+    overflow: hidden;
+}
+.content_box_right_2_b_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b8_2.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 10px;
+    overflow: hidden;
+}
+.content_box_right_2_c_ul li {
+    border-bottom: 1px dotted #B60000;
+    padding: 4px 0;
+}
+.content_box_right_2_c_ul2 li {
+    border-bottom: 1px dotted #B60000;
+    padding: 6px 0 7px;
+}
+.nav_right_l, a.nav_right_l:link, a.nav_right_l:active, a.nav_right_l:visited {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b9.gif") no-repeat scroll 3px 15px transparent;
+    color: #DC030D;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 130%;
+    padding: 10px 0 10px 12px;
+    text-decoration: none;
+}
+a.nav_right_l:hover {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/c1.gif") no-repeat scroll 3px 15px #B50000;
+    color: #FFFFFF;
+    display: block;
+    line-height: 130%;
+    padding: 10px 0 10px 12px;
+    text-decoration: none;
+}
+a.nav_right_l_s {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b9.gif") no-repeat scroll 3px 12px transparent;
+    color: #DC030D;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 29px;
+    line-height: 29px;
+    overflow: hidden;
+    text-decoration: none;
+    text-indent: 15px;
+}
+a.nav_right_l_s:hover {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/c1.gif") no-repeat scroll 3px 12px #B50000;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.nav_right_l_new, a.nav_right_l_new:link, a.nav_right_l_new:active, a.nav_right_l_new:visited {
+    background: url("http://www.4008823823.com.cn/kfcios/images/b9.gif") no-repeat scroll 3px 10px transparent;
+    color: #DC030D;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 130%;
+    padding: 5px 0 6px 12px;
+    text-decoration: none;
+}
+a.nav_right_l_new:hover {
+    background: url("http://www.4008823823.com.cn/kfcios/images/c1.gif") no-repeat scroll 3px 10px #B50000;
+    color: #FFFFFF;
+    display: block;
+    line-height: 130%;
+    padding: 5px 0 6px 12px;
+    text-decoration: none;
+}
+.info_tip {
+    color: #DC030D;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 130%;
+    padding: 8px 0 8px 12px;
+    text-decoration: none;
+}
+a.nav_right_l2:link, a.nav_right_l2:active, a.nav_right_l2:visited {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/b9.gif") no-repeat scroll 3px 15px transparent;
+    color: #DC030D;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 130%;
+    padding: 7px 0 7px 12px;
+    text-decoration: none;
+}
+a.nav_right_l2:hover {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/c1.gif") no-repeat scroll 3px 15px #B50000;
+    color: #FFFFFF;
+    display: block;
+    line-height: 130%;
+    padding: 7px 0 7px 12px;
+    text-decoration: none;
+}
+.content_box_right_3_h5 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/c3.gif") repeat scroll 0 0 transparent;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    position: relative;
+}
+.content_box_right_3_h5 em {
+    color: #943E00;
+    font-style: normal;
+    font-weight: 100;
+    left: 30px;
+    position: absolute;
+    top: 0;
+}
+.content_box_right_3_h5 img {
+    margin-right: 10px;
+    margin-top: 6px;
+    vertical-align: middle;
+}
+.content_box_right_3_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/c5.gif") no-repeat scroll center center transparent;
+    display: block;
+    font-family: 宋体;
+    height: 26px;
+    line-height: 26px;
+    margin: 8px auto auto;
+    overflow: hidden;
+    padding-left: 15px;
+}
+.content_box_right_3_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/c6.gif") no-repeat scroll center center transparent;
+    display: block;
+    height: 30px;
+}
+.margin {
+    margin-top: 8px;
+}
+.footer_box {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a2.jpg") no-repeat scroll 0 0 transparent;
+    height: 73px;
+    position: relative;
+}
+.footer_box_1 {
+    color: #FFFFFF;
+    display: block;
+    padding: 8px 0 0 15px;
+    position: relative;
+}
+.footer_box_1_1 {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.sty10 {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+}
+a.nav_fff:link, a.nav_fff:active, a.nav_fff:visited {
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+}
+a.nav_fff:hover {
+    text-decoration: none;
+}
+a.nav_ccc:link, a.nav_ccc:active, a.nav_ccc:visited {
+    color: #8E3E03;
+    font-family: Arial,Helvetica,sans-serif;
+    text-decoration: none;
+}
+a.nav_ccc:hover {
+    color: red;
+    text-decoration: none;
+}
+.content_box_left_main_left_info {
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    padding: 12px 0 0 5px;
+}
+.content_box_left_main_left_info_2 {
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    padding: 5px 0 0 5px;
+}
+.bmargin {
+    margin-bottom: 5px;
+}
+.footer_box_2 {
+    color: #FFFFFF;
+    display: block;
+    padding: 10px 0 0 15px;
+}
+.f14 {
+    color: #E90000;
+    display: block;
+    font-size: 14px;
+}
+.box_top_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/float_bg_new.gif") repeat scroll 0 0 transparent;
+    height: 229px;
+    overflow: hidden;
+    position: relative;
+    width: 442px;
+}
+.box_top_1_1 {
+    float: left;
+    padding: 7px;
+}
+.box_top_1_2 {
+    float: left;
+    font-family: 宋体;
+    line-height: 150%;
+    padding: 20px 0 0;
+    width: 267px;
+}
+.content_box_left_main_right_c_ul_li_1_1 {
+    display: block;
+    margin-top: 15px;
+}
+.content_box_left_main_right_c_ul_li_1_1_l {
+    color: #E90000;
+    display: block;
+    float: left;
+    line-height: 20px;
+    padding-left: 10px;
+    padding-top: 0;
+}
+.content_box_left_main_right_c_ul_li_1_1_r {
+    color: #E90000;
+    float: right;
+    padding-right: 10px;
+}
+.cursor {
+    cursor: pointer;
+}
+.box_top_1_3 {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.menu_line a {
+    position: relative;
+    z-index: 10;
+}
+.menu_line a span {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/d1.gif") repeat scroll 0 0 transparent;
+    height: 28px;
+    left: -80px;
+    margin-left: -9000px;
+    margin-top: -9000px;
+    position: absolute;
+    top: -25px;
+    width: 281px;
+}
+.menu_line A:hover {
+    text-decoration: none;
+}
+.menu_line A:hover {
+    background-color: #FFCB75;
+}
+.menu_line A:hover span {
+    color: #000000;
+    margin: 0;
+    z-index: 9999;
+}
+.tip_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/d2.gif") repeat scroll 0 0 transparent;
+    display: none;
+    height: 28px;
+    left: -50px;
+    position: absolute;
+    top: -17px;
+    width: 190px;
+    z-index: 9999;
+}
+.content_box_right_dd_c_1 {
+    color: #5F890B;
+    display: block;
+    padding-left: 5px;
+}
+.order_td_t {
+    background: none repeat scroll 0 0 #5C8702;
+    border-right: 1px solid #8BAD57;
+    color: #FFFFFF;
+    display: block;
+    height: 30px;
+    padding: 5px 0 0 5px;
+}
+.order_td_t em {
+    color: #FFFFFF;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 9px;
+    font-style: normal;
+}
+.order_table {
+    margin-top: 5px;
+}
+.map_box {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/e4.gif") repeat scroll 0 0 transparent;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 15px;
+}
+.order_box_make {
+    height: 168px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+}
+.order_box_make_1 {
+    color: #5C8702;
+    padding: 0 0 0 3px;
+}
+.order_box_make_2, .order_box_make_3 {
+    color: #5C8702;
+    display: block;
+    text-align: center;
+}
+.order_box_make_4 {
+    cursor: pointer;
+}
+.order_td_line {
+    border-bottom: 1px dotted #5D8602;
+}
+.order_bg_info {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/e5.gif") no-repeat scroll 0 0 transparent;
+    color: #5C8702;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    padding-left: 5px;
+    position: relative;
+}
+.order_bg_info em {
+    font-style: normal;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.order_bt {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+.order_ul {
+    width: 100%;
+}
+.order_ul li {
+    border-bottom: 1px solid #FFCB75;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+.order_ul_1 {
+    display: block;
+    float: left;
+    width: 75px;
+}
+.order_ul_2 {
+    display: block;
+    float: left;
+    padding: 0 0 0 10px;
+    width: 80px;
+}
+.pic {
+    border: 1px solid #FFCB75;
+}
+.order_page {
+    text-align: center;
+}
+.login_order_box {
+    padding: 10px;
+}
+.login_order_box_n {
+    overflow: hidden;
+    padding: 10px;
+    width: 580px;
+}
+.login_order_box_1 {
+    float: left;
+}
+.login_order_box_2 {
+    float: left;
+    margin-left: 10px;
+    padding: 10px 0 0 10px;
+}
+.login_order_box_2_1 {
+    display: block;
+    height: 50px;
+}
+.order_box_2_n {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a14.gif") repeat scroll 0 0 transparent;
+    padding: 0 10px;
+}
+.order_box_2_n_h1_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a38.gif") repeat scroll 0 0 transparent;
+    display: block;
+    height: 9px;
+    overflow: hidden;
+}
+.order_box_2_n_h1_2 {
+    background: none repeat scroll 0 0 #FAEAD1;
+    color: #D41A01;
+    display: block;
+    font-size: 13px;
+    line-height: 150%;
+    padding: 8px 20px;
+}
+.order_box_2_n_h2_box {
+    line-height: 150%;
+    padding: 10px 20px;
+}
+.order_fl_ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a40.gif") no-repeat scroll 0 8px transparent;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.order_fl_ul_2 li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a40.gif") no-repeat scroll 0 8px transparent;
+    margin-bottom: 2px;
+    padding-left: 10px;
+}
+.order_box_3 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a13.gif") repeat scroll 0 0 transparent;
+    height: 12px;
+    overflow: hidden;
+}
+.order_box_2_n_h1_3 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a39.gif") repeat scroll 0 0 transparent;
+    display: block;
+    height: 9px;
+    overflow: hidden;
+}
+.order_box_2_n_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a37.gif") repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    font-size: 14px;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 10px;
+    position: relative;
+}
+.order_box_2_n_h1 em {
+    color: #FFFFFF;
+    font-style: normal;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.order_box_2_n_h1 em a:link, .order_box_2_n_h1 em a:active, .order_box_2_n_h1 em a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.order_box_2_n_h1 em a:hover {
+    color: #FFFFFF;
+}
+.order_jg {
+    color: #E90000;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.order_jg_2 {
+    color: #E90000;
+}
+.input_obj {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #FFE6C9;
+    color: #E50006;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 3px;
+    vertical-align: middle;
+}
+.login_order_box_2_3 {
+    display: block;
+    margin-top: 15px;
+}
+.login_order_box_3 {
+    margin-top: 21px;
+}
+.login_order_box_3_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a11.gif") repeat scroll 0 0 transparent;
+    height: 26px;
+    line-height: 26px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+.order_sz {
+    color: #E90000;
+    padding: 0 10px;
+}
+.login_order_box_3_h2 {
+    background: none repeat scroll 0 0 #FFE4AC;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+}
+.login_order_box_3_1 {
+    background: none repeat scroll 0 0 #FFFDE4;
+    border: 1px solid #FDE7C2;
+    display: block;
+    padding: 3px 10px 4px;
+}
+.login_order_box_3_1_1 {
+    display: block;
+    padding-left: 15px;
+}
+.order_box_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a12.gif") repeat scroll 0 0 transparent;
+    height: 12px;
+    overflow: hidden;
+}
+.order_box_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a14.gif") repeat scroll 0 0 transparent;
+    padding: 80px;
+}
+.order_box_3 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a13.gif") repeat scroll 0 0 transparent;
+    height: 12px;
+    overflow: hidden;
+}
+.order_box_2_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a15.gif") no-repeat scroll 20px 40px #FFE4AC;
+    display: block;
+    margin: auto;
+    padding: 20px 0 30px 110px;
+    position: relative;
+    width: 590px;
+}
+.order_box_2_1 em {
+    font-style: normal;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+a.order_box_2_1_Print:link, a.order_box_2_1_Print:active, a.order_box_2_1_Print:visited {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a17.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 16px;
+}
+a.order_box_2_1_Save:link, a.order_box_2_1_Save:active, a.order_box_2_1_Save:visited {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a18.gif") no-repeat scroll left center transparent;
+    display: block;
+    padding-left: 16px;
+}
+.order_box_2_1_h1 {
+    color: #E90000;
+    font-size: 22px;
+}
+a.nav_red_b:link, a.nav_red_b:active, a.nav_red_b:visited {
+    color: #E90000;
+    font-size: 22px;
+    text-decoration: none;
+}
+a.nav_red_b:hover {
+    color: #000000;
+}
+a.nav_red_c:link, a.nav_red_c:active, a.nav_red_c:visited {
+    color: #943E00;
+    font-size: 22px;
+    text-decoration: none;
+}
+a.nav_red_c:hover {
+    color: #000000;
+}
+.order_box_2_1_h2 {
+    color: #943E00;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+}
+.order_box_2_1_1 {
+    display: block;
+    margin-top: 40px;
+}
+.order_box_2_1_1_h1 {
+    font-weight: 100;
+}
+.order_box_2_1_1_ul {
+    margin-top: 5px;
+}
+.order_box_2_1_1_ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a16.gif") no-repeat scroll 0 4px transparent;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    width: 500px;
+}
+.order_right_box_c_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a19.gif") repeat scroll 0 0 transparent;
+    height: 9px;
+    overflow: hidden;
+}
+.order_right_box_c_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a20.gif") repeat scroll 0 0 transparent;
+    padding: 0 10px;
+}
+.order_right_box_c_2_p {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a20.gif") repeat scroll 0 0 transparent;
+    padding: 0 10px;
+}
+.order_right_box_c_3 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a23.gif") repeat scroll 0 0 transparent;
+    height: 9px;
+    overflow: hidden;
+}
+.order_right_box_c_2_end_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a30_2.gif") repeat scroll 0 0 transparent;
+    display: block;
+    height: 20px;
+}
+.order_right_box_c_2_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a25.gif") repeat scroll 0 0 transparent;
+    color: #FFFDE5;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 35px;
+}
+.order_right_box_c_2_h1_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a25_1.gif") repeat scroll 0 0 transparent;
+    color: #FFFDE5;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 35px;
+}
+.order_right_box_c_2_h1_t {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a25_t.gif") repeat scroll 0 0 transparent;
+    color: #FFFDE5;
+    height: 27px;
+    line-height: 27px;
+    padding-left: 10px;
+}
+.order_right_box_c_2_span {
+    display: block;
+    margin-top: 5px;
+}
+.order_right_table_t {
+    background: none repeat scroll 0 0 #FFE4AC;
+    border-right: 1px solid #FFFFFF;
+    display: block;
+    height: 28px;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+.order_right_table_t em {
+    display: block;
+    font-size: 10px;
+    font-style: normal;
+}
+.order_right_box_c_2_span_1 {
+    display: block;
+    padding-left: 5px;
+}
+.order_f_c {
+    color: #DC030D;
+}
+a.order_f_a:link, a.order_f_a:active, a.order_f_a:visited {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a28.gif") no-repeat scroll 0 1px transparent;
+    display: block;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+.order_td_line {
+    border-bottom: 1px solid #943E00;
+}
+.order_right_box_c_2_end {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a30.gif") repeat scroll 0 0 transparent;
+    display: block;
+    height: 20px;
+}
+.order_right_box_c_4 {
+    background: none repeat scroll 0 0 #FFE4AC;
+    margin-right: 1px;
+    padding: 10px 20px;
+}
+.order_right_box_c_4_1 {
+    color: #DC030D;
+}
+a.order_right_c:link, a.order_right_c:active, a.order_right_c:visited {
+    color: #666666;
+    text-decoration: none;
+}
+a.order_right_c:hover {
+    color: #000000;
+    text-decoration: none;
+}
+.order_right_box_c_4_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a33.gif") repeat scroll 0 0 transparent;
+    display: block;
+    height: 20px;
+}
+.order_right_box_c_5_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a34.gif") repeat scroll 0 0 transparent;
+    color: #FFFDE4;
+    height: 31px;
+    margin-bottom: 5px;
+    padding-left: 35px;
+    padding-top: 5px;
+}
+.order_right_box_c_4_2_bt {
+    display: block;
+    padding: 20px 0 10px;
+    position: relative;
+}
+.order_right_box_c_4_2_bt_1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a35.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    margin-left: 100px;
+    padding-left: 20px;
+}
+.order_right_box_c_4_2_bt_2 {
+    position: absolute;
+    right: 250px;
+    top: 25px;
+}
+.content_box_left_main_left_c_h2 img {
+    margin-top: 5px;
+}
+.content_box_right_dd_c_1 em {
+    font-style: normal;
+}
+.content_box_right_dd_c_1 em a {
+    color: #5F890B;
+    text-decoration: none;
+}
+.header_box {
+    height: 63px;
+}
+.content_box_left_main_left_c_h2 img.img_obj {
+    margin-top: 2px;
+}
+.content_box_left_main_left_c_h2 img.img_obj_cn {
+    margin-top: 2px;
+}
+.content_box_left_main_left_c_h2 img.img_obj_en {
+    margin-top: 2px;
+}
+.order_box_2_1_info {
+    background: none repeat scroll 0 0 #FFE4AC;
+    display: block;
+    margin: auto;
+    padding: 80px 0;
+    position: relative;
+    text-align: center;
+    width: 590px;
+}
+.order_bt_left {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/ver/btn_green_left.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 20px;
+}
+.order_info_alert {
+    background: none repeat scroll 0 0 #FFFDE4;
+    border: 4px solid #DB040C;
+    left: 220px;
+    position: absolute;
+    text-align: center;
+    top: -130px;
+    width: 308px;
+    z-index: 100;
+}
+.order_info_alert_t {
+    background: none repeat scroll 0 0 #FAEAD1;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+    color: #666668;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 0;
+}
+.order_info_alert_b {
+    color: #333333;
+    padding: 15px 0;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix {
+    height: 1px;
+}
+.clearfix {
+    min-height: 1px;
+}
+.clearfix-02-popoo:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix-02-popoo {
+}
+.clearfix-02-popoo {
+    min-height: 1px;
+}
+.NewCustomer_box_left {
+    margin-top: 3px;
+}
+.NewCustomer_box_left_h1 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a41.gif") repeat scroll 0 0 transparent;
+    height: 41px;
+    position: relative;
+}
+.NewCustomer_box_left_h1 em {
+    font-style: normal;
+    font-weight: 100;
+    position: absolute;
+    right: 3px;
+    top: -20px;
+}
+.NewCustomer_box_left_h1n {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a41.gif") repeat scroll 0 0 transparent;
+    height: 41px;
+    position: relative;
+}
+.NewCustomer_box_left_h1n em {
+    font-style: normal;
+    font-weight: 100;
+    position: absolute;
+    right: 3px;
+    top: -8px;
+}
+.NewCustomer_box_left_c {
+    background: none repeat scroll 0 0 #FFFDE4;
+    border-left: 2px solid #FFE4AC;
+    border-right: 2px solid #FFE4AC;
+}
+.NewCustomer_box_left_e {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a42.gif") repeat scroll 0 0 transparent;
+    height: 10px;
+    overflow: hidden;
+}
+.NewCustomer_box_login_p {
+    padding: 43px 40px;
+}
+.nav_center_ul li {
+    padding-bottom: 8px;
+}
+a.nav_center_y:link, a.nav_center_y:active, a.nav_center_y:visited {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a48.gif") repeat scroll 0 -35px transparent;
+    color: #973C05;
+    display: block;
+    height: 28px;
+    line-height: 100%;
+    overflow: hidden;
+    padding: 7px 0 0 10px;
+}
+a.nav_center_y:hover {
+    text-decoration: none;
+}
+.help_box {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #FFE4AC;
+    padding: 10px 10px 2px;
+}
+a.nav_center_n:link, a.nav_center_n:active, a.nav_center_n:visited {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a48.gif") repeat scroll 0 0 transparent;
+    color: #973C05;
+    display: block;
+    height: 28px;
+    line-height: 100%;
+    overflow: hidden;
+    padding: 7px 0 0 10px;
+}
+a.nav_center_n:hover {
+    color: #C70026;
+    text-decoration: none;
+}
+.help_ul_nav {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a57.gif") repeat scroll 0 0 transparent;
+    height: 45px;
+    position: relative;
+    width: 1000px;
+}
+.help_ul_nav em {
+    font-style: normal;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.help_ul_nav_ul li {
+    display: block;
+    float: left;
+    height: 34px;
+    width: 120px;
+}
+a.help_nav_1:link, a.help_nav_1:active, a.help_nav_1:visited {
+    display: block;
+    height: 34px;
+    line-height: 200px;
+    overflow: hidden;
+}
+.left_step {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 145px;
+}
+.right_step {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 821px;
+}
+.right_step_01 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/f03.gif") no-repeat scroll 0 bottom transparent;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 821px;
+}
+.right_step_01_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/f02.gif") no-repeat scroll 0 top transparent;
+    color: #943E00;
+    margin: 0;
+    padding: 10px 20px 0;
+}
+.right_step_01_3 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/f04.gif") repeat-x scroll 0 bottom transparent;
+    line-height: 160%;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+}
+.right_step_01_4 {
+    font-weight: bold;
+    margin: 0 0 15px -10px;
+}
+.right_step_02_2 table th, .right_step_01_2 table th {
+    padding-bottom: 5px;
+    text-align: left;
+}
+.right_step_02_2 table td, .right_step_01_2 table td {
+    padding: 0 5px 20px 0;
+}
+.right_step_02 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/f06.gif") no-repeat scroll 0 bottom transparent;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 405px;
+}
+.right_step_02_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/f05.gif") no-repeat scroll 0 top transparent;
+    color: #943E00;
+    margin: 0;
+    padding: 10px 20px 0;
+}
+.page_next {
+    margin: 10px 0 0;
+    text-align: right;
+}
+.page_next a {
+    padding-left: 15px;
+    text-decoration: none;
+}
+.right_step_02_2 a {
+    color: red;
+    text-decoration: none;
+}
+.gnavi_01 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/f07.gif") no-repeat scroll 0 0 transparent;
+    height: 27px;
+    margin: 0 0 10px;
+    width: 966px;
+}
+.gnavi_02 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/f09.gif") no-repeat scroll 0 0 transparent;
+    height: 27px;
+    margin: 0 0 10px;
+    width: 966px;
+}
+.gnavi_03 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/f11.gif") no-repeat scroll 0 0 transparent;
+    height: 27px;
+    margin: 0 0 10px;
+    width: 966px;
+}
+.gnavi_01 a, .gnavi_02 a, .gnavi_03 a {
+    color: #964300;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    text-decoration: none;
+    width: 322px;
+}
+.gnavi_01 a.on, .gnavi_02 a.on, .gnavi_03 a.on {
+    color: #FFFFFF;
+}
+.right_step_01_5 {
+    margin: 0 0 0 -10px;
+    padding-bottom: 15px;
+}
+#next a {
+    text-decoration: none;
+}
+.selectlist {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #943E00;
+    color: #929292;
+    left: 255px;
+    padding: 10px 5px;
+    position: absolute;
+    top: 278px;
+    width: 180px;
+}
+.modifyMobile {
+    position: relative;
+}
+.modifyCity {
+    position: relative;
+}
+.selectItemcont {
+    color: #5D8602;
+    padding: 8px;
+}
+#selectItem {
+    background: none repeat scroll 0 0 #FFF4E4;
+    border: 1px solid #943E00;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 190px;
+    z-index: 1000;
+}
+#selectItem2 {
+    background: none repeat scroll 0 0 #FFF4E4;
+    border: 1px solid #943E00;
+    height: 260px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    z-index: 1000;
+}
+#selectItem3 {
+    background: none repeat scroll 0 0 #FFF4E4;
+    border: 1px solid #943E00;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 445px;
+    z-index: 1000;
+}
+#selectItem4 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #000000;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 380px;
+    z-index: 1000;
+}
+#selectItem6 {
+    background: none repeat scroll 0 0 #FFF4E4;
+    border: 1px solid #943E00;
+    height: 360px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    width: 335px;
+    z-index: 1000;
+}
+#selectItem5 {
+    background: none repeat scroll 0 0 #FFF4E4;
+    border: 1px solid #943E00;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 370px;
+    z-index: 1000;
+}
+.selectItemtit {
+    height: 20px;
+    line-height: 20px;
+    margin: 1px;
+    padding-left: 12px;
+}
+.bgc_ccc {
+    background: none repeat scroll 0 0 #DB030E;
+}
+.selectItemleft {
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.selectItemright {
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+}
+.selectItemcls {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+}
+.selectItemhidden {
+    border: 1px solid #943E00;
+    display: none;
+}
+.nav_left_ul li.s {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/kfc-fire.gif") no-repeat scroll 0 0 transparent;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+}
+.Left_detail_css06 {
+    display: none;
+    height: 232px;
+    left: -80px;
+    position: absolute;
+    text-align: left;
+    top: 73px;
+    width: 388px;
+    z-index: 10000;
+}
+.Left_detail_css06 #float_arrow02 {
+    padding-left: 118px;
+    width: 5px;
+}
+.box_top_2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/float_bg_new02.gif") repeat scroll 0 0 transparent;
+    height: 229px;
+    overflow: hidden;
+    position: relative;
+    width: 442px;
+}
+.header_box_menu_1 {
+    position: relative;
+}
+.sc {
+    height: 20px;
+    left: 245px;
+    position: absolute;
+    top: 7px;
+    width: 100px;
+}
+.eventInner2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a01.gif") no-repeat scroll 0 0 transparent;
+    padding-top: 8px;
+    width: 604px;
+}
+.eventInner3 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a02.gif") no-repeat scroll 0 bottom transparent;
+    padding: 0 5px 10px;
+    width: 594px;
+}
+.content_box_right_3 ul li {
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 0 1px 1px 0;
+}
+.content_box_right_3 {
+    background: none repeat scroll 0 0 #FFCB77;
+    margin-top: 5px;
+    padding: 2px 0 0 2px;
+}
+.eventArea {
+    height: 612px;
+    position: relative;
+    width: 594px;
+}
+.solid {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/t09.png") repeat scroll 0 0 transparent;
+    bottom: 0;
+    height: 72px;
+    left: 0;
+    padding: 1px 10px 0 0;
+    position: absolute;
+    width: 584px;
+}
+.solid ul {
+    float: right;
+}
+.solid ul li {
+    cursor: pointer;
+    float: left;
+    height: 70px;
+    overflow: hidden;
+    padding: 3px 10px 0 0;
+    width: 70px;
+}
+.solid ul li img {
+    border: 1px solid #FFFFFF;
+    height: 63px;
+    width: 63px;
+}
+.popInner {
+    height: 628px;
+    overflow: hidden;
+    width: 594px;
+}
+#eventBtn_c, #eventBtn_e {
+    cursor: pointer;
+}
+.selectItemtit {
+    height: 20px;
+    line-height: 20px;
+    margin: 1px;
+    padding-left: 12px;
+}
+.bgc_ccc {
+    background: none repeat scroll 0 0 #DB030E;
+}
+.selectItemleft {
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.selectItemright {
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+}
+.selectItemcls {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+}
+.selectItemhidden {
+    border: 1px solid #DB030E;
+    display: none;
+    left: 116px;
+    position: absolute;
+    top: -55px;
+}
+#popup_container {
+    background: none repeat scroll 0 0 #FFFDE4;
+    border-color: #DC030D;
+    border-radius: 5px 5px 5px 5px;
+    border-right: 4px solid #DC030D;
+    border-style: solid;
+    border-width: 4px;
+    color: #000000;
+    font-family: Arial,sans-serif;
+    font-size: 12px;
+    max-width: 600px;
+    min-width: 300px;
+}
+#popup_title {
+    background: url("images/title.gif") repeat-x scroll 50% top #FAEAD1;
+    border-color: #FFFFFF #FFFFFF #999999;
+    border-right: 1px solid #FFFFFF;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    color: #666666;
+    cursor: default;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.75em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#popup_content {
+    background: url("images/info.gif") no-repeat scroll 16px 16px transparent;
+    margin: 0;
+    padding: 1em 1.75em;
+}
+#popup_content.alert {
+    background-image: url("images/info.gif");
+}
+#popup_content.confirm {
+    background-image: url("images/important.gif");
+}
+#popup_content.prompt {
+    background-image: url("images/help.gif");
+}
+#popup_message {
+    text-align: center;
+}
+#popup_panel {
+    margin: 1em 0 0 1em;
+    text-align: center;
+}
+#popup_prompt {
+    margin: 0.5em 0;
+}
+.content_box_left_main_left_h1-popoo {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/a1_2_02_popoo.png") repeat-x scroll 0 0 transparent;
+    color: #E90000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    height: 42px;
+    line-height: 40px;
+    overflow: hidden;
+    padding-left: 15px;
+    position: relative;
+}
+.ie-6-height120px-popoo {
+}
+* + html .ie-6-height120px-popoo {
+    height: 150px;
+}
+.kfcLogo {
+    background: url("images/logo.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 63px;
+    width: 201px;
+}
+.kfcLogo a {
+    display: block;
+    height: 63px;
+    overflow: hidden;
+    text-indent: -999px;
+    width: 201px;
+}
+.headLeft {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a45.gif") no-repeat scroll 0 bottom transparent;
+    float: right;
+    height: 63px;
+    position: relative;
+    width: 792px;
+}
+.headLeft .tfav {
+	height: 15px;
+	position: absolute;
+	right: -14px;
+	top: 25px;
+	width: 140px;
+}
+.headLeft p {
+    color: #E90000;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 5px;
+}
+.headLeft p span {
+    padding-right: 186px;
+}
+.headLeft ul li {
+    float: left;
+    height: 30px;
+}
+.headLeft ul li.m1 {
+    width: 105px;
+}
+.headLeft ul li.m2 {
+    width: 158px;
+}
+.headLeft ul li.m3 {
+    width: 181px;
+}
+.headLeft ul li.m4 {
+    width: 183px;
+}
+.headLeft ul li.m5 {
+    width: 163px;
+}
+.headLeft ul li a {
+    display: block;
+    font-family: Arial;
+    font-size: 11px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 22px;
+    text-decoration: none;
+}
+.headLeft ul li a strong {
+    font-family: "宋体";
+    font-size: 14px;
+}
+.headLeft ul li a:hover {
+    text-decoration: none;
+    cursor:pointer;
+}
+.headLeft ul li a.on {
+    color: red;
+}
+.blockLeft {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a01.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    padding-top: 18px;
+    width: 798px;
+}
+.blockLeft2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a03.gif") no-repeat scroll 0 bottom transparent;
+    padding-bottom: 15px;
+}
+.blockLeft3 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a02.gif") repeat-y scroll 0 0 transparent;
+}
+.blockLeft4 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a04.gif") no-repeat scroll 418px 355px transparent;
+    height: 510px;
+}
+.step01 {
+    padding: 60px 0 0 98px;
+    position: relative;
+}
+.step01 p {
+    font-family: Arial;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.step01 p strong {
+    font-family: "宋体";
+    font-size: 21px;
+}
+.step01 p.ds {
+    padding: 8px 0 5px;
+}
+.step01 p.ds2 {
+    color: #666666;
+    padding: 8px 0 5px;
+}
+.blockRight {
+    float: right;
+    width: 195px;
+}
+.input {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    width: 186px;
+}
+.btnNext {
+    margin-top: 100px;
+}
+.contentBlock {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a06.gif") no-repeat scroll 0 0 transparent;
+    padding-top: 18px;
+    width: 1000px;
+}
+.contentBlock_b {
+    background: url("http://www.4008823823.com.cn/kfcios/imgnew/n_t.gif") no-repeat scroll 0 0 transparent;
+    padding-top: 10px;
+    width: 1000px;
+}
+.contentBlock2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a08.gif") no-repeat scroll 0 bottom transparent;
+    padding-bottom: 11px;
+}
+.contentBlock3 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a07.gif") repeat-y scroll 0 0 transparent;
+}
+.contentBlock3_b {
+    background: url("http://www.4008823823.com.cn/kfcios/imgnew/n_b.gif") repeat-y scroll 0 0 transparent;
+}
+.contentBlock4 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a04.gif") no-repeat scroll 620px 16px transparent;
+    height: auto !important;
+    min-height: 520px;
+    overflow: visible;
+}
+.contentBlock4_b {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a04.gif") no-repeat scroll 620px bottom transparent;
+    height: auto !important;
+    min-height: 520px;
+    overflow: visible;
+}
+.step2 {
+    padding: 15px 20px 0;
+}
+.blockInner {
+    padding: 0 20px;
+}
+.welcomeTxt {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.welcomeTxt strong {
+    font-size: 16px;
+}
+.welcomeTxt span {
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+    text-decoration: none;
+}
+.welcomeTxt_b {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 15px 0 0;
+}
+.welcomeTxt_b strong {
+    font-size: 16px;
+}
+.welcomeTxt_b span {
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+    text-decoration: none;
+}
+.dlStyle01 dt {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a09.gif") no-repeat scroll 0 18px transparent;
+    float: left;
+    line-height: 22px;
+    padding: 12px 0 12px 15px;
+    width: 170px;
+}
+.dlStyle01 dt strong {
+    font-size: 14px;
+    font-weight: bold;
+}
+.dlStyle01 dd {
+    float: left;
+    line-height: 22px;
+    padding: 12px 0;
+    width: 735px;
+}
+.dlStyle01 dd span.txtSpan {
+    color: #707070;
+    display: block;
+    float: left;
+    width: 177px;
+}
+.dlStyle01 dd a {
+    color: #943E00;
+    text-decoration: none;
+}
+.dlStyle01 dd a:hover {
+    color: #E60012;
+}
+.input2 {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    width: 156px;
+}
+.tableDiv {
+    float: left;
+    line-height: 30px;
+    margin-right: 20px;
+    width: 550px;
+}
+.ddA {
+    line-height: 30px;
+}
+.tableDiv table th {
+    background: none repeat scroll 0 0 #FFEAC8;
+    border-right: 1px solid #FFFFFF;
+    font-weight: normal;
+    padding: 0 10px;
+    text-align: left;
+}
+.tableDiv table td {
+    border-bottom: 1px solid #C9A17F;
+    padding: 0 10px;
+}
+.input3 {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 15px;
+    padding: 0 5px;
+    width: 145px;
+}
+.input4 {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 15px;
+    padding: 0 5px;
+    width: 85px;
+}
+.input5 {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 15px;
+    padding: 0 5px;
+    width: 55px;
+}
+.teleDiv, .cityDiv {
+    float: left;
+    margin-right: 20px;
+    width: 550px;
+}
+.teleDiv table td, .cityDiv td, .setPassword td {
+    padding-bottom: 10px;
+}
+.modifyMobile p {
+    padding-top: 32px;
+}
+.input6 {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 15px 0 5px;
+    padding: 0 5px;
+    width: 170px;
+}
+.modifyMobile td, .modifyCity td, .setPassword td {
+    vertical-align: top;
+}
+.input7 {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 15px;
+    padding: 0 5px;
+    width: 250px;
+}
+.aHelp {
+    color: #707070;
+    position: relative;
+}
+.cityDiv img {
+    margin-right: 10px;
+    vertical-align: -5px;
+}
+.modifyCity p.saveAddress {
+    padding-top: 90px;
+}
+.modifyCity td strong {
+    color: #707070;
+    font-weight: normal;
+}
+.setPassword {
+    padding-top: 10px;
+}
+.setPassword span {
+    display: block;
+    float: right;
+    width: 420px;
+}
+.setPassword span img {
+    margin-right: 5px;
+}
+.setPassword {
+    display: none;
+    width: 650px;
+}
+.redTxt {
+    color: #E60012;
+}
+.modifyCity, .modifyMobile {
+    display: none;
+}
+.lineStyle {
+    border-bottom: 1px dashed #C9A17F;
+}
+.dlStyle02 dt {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a09.gif") no-repeat scroll 0 12px transparent;
+    color: #E60012;
+    float: left;
+    line-height: 22px;
+    padding: 6px 0 6px 15px;
+    width: 170px;
+}
+.dlStyle02 dt strong {
+    font-size: 14px;
+    font-weight: bold;
+}
+.dlStyle02 dd {
+    float: left;
+    font-size: 14px;
+    height: 44px;
+    line-height: 22px;
+    padding: 6px 0;
+    width: 735px;
+}
+.dlStyle02 dd span.bc {
+    color: #E60012;
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.dlStyle02 dd select {
+    color: #E60012;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 5px;
+    width: 40px;
+}
+.dlStyle02 dd strong {
+    color: #E60012;
+    font-size: 22px;
+    font-weight: bold;
+}
+.btnNext2 {
+    padding: 15px 0 60px;
+    text-align: center;
+}
+.dlStyle03 {
+    color: #707070;
+}
+.dlStyle03 dt {
+    float: left;
+    line-height: 22px;
+    padding: 6px 0;
+    width: 185px;
+}
+.dlStyle03 dd {
+    float: left;
+    height: 44px;
+    line-height: 22px;
+    padding: 6px 0;
+    width: 720px;
+}
+.dlStyle03 dt span.on {
+    cursor: pointer;
+    text-decoration: none;
+}
+.aHelp .helpRoad {
+    display: none;
+    left: -290px;
+    position: absolute;
+    top: 15px;
+    width: 370px;
+}
+.aHelp .helpRoad2 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #993F0A;
+    color: #707070;
+    left: 0;
+    padding: 5px;
+    position: absolute;
+    top: 12px;
+    width: 368px;
+    z-index: 1;
+}
+.helpRoadClose {
+    cursor: pointer;
+    height: 11px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 12px;
+}
+.topArrow {
+    left: 335px;
+    position: absolute;
+    top: 5px;
+    z-index: 2;
+}
+.dlStyle01 dd a#addAddress, .dlStyle01 dd a#addTele {
+    line-height: 30px;
+}
+.modifyCity td .helpRoad2 strong {
+    color: #E60012;
+}
+.modifyCity td .helpRoad2 ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a12.gif") no-repeat scroll 3px 10px transparent;
+    padding-left: 10px;
+}
+.step01 .yzmP p {
+    font-family: "宋体",Arial;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 150%;
+}
+.step01 .yzmP p a, .step01 .yzmP p a:hover {
+    color: #943E00;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#yzmP2 {
+    display: none;
+}
+.hqyzm {
+    padding-left: 10px;
+}
+.hqyzm img {
+}
+.yzmTxt {
+    background: none repeat scroll 0 0 #FFFDE4;
+    border: 1px solid #FFCB75;
+    left: 456px;
+    padding: 10px;
+    position: absolute;
+    top: 130px;
+    width: 270px;
+}
+.yzmTxt p {
+    font-weight: bold;
+}
+.yzmTxt p span.on {
+    cursor: pointer;
+    font-weight: normal;
+    text-decoration: none;
+}
+.yzmTxt ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a14.gif") no-repeat scroll 3px 8px transparent;
+    line-height: 160%;
+    padding-left: 10px;
+}
+.yzmTxt2 {
+    background: none repeat scroll 0 0 #FFFDE4;
+    border: 1px solid #FFCB75;
+    left: 326px;
+    padding: 10px;
+    position: absolute;
+    top: 107px;
+    width: 410px;
+}
+.yzmTxt2 p {
+    font-weight: bold;
+}
+.yzmTxt2 p span.on {
+    cursor: pointer;
+    font-weight: normal;
+    text-decoration: none;
+}
+.yzmTxt2 ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a14.gif") no-repeat scroll 3px 8px transparent;
+    line-height: 160%;
+    padding-left: 10px;
+}
+.dlStyle01 dd a.aHelp, .dlStyle01 dd a.aHelp2, .dlStyle01 dd a.helpBtn {
+    color: #707070;
+}
+.checkSpan {
+    padding-right: 30px;
+}
+.aHelp2 {
+    position: relative;
+}
+.aHelp2 .emailHelp {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a16.gif") no-repeat scroll 0 bottom transparent;
+    display: none;
+    left: 65px;
+    position: absolute;
+    top: -15px;
+    width: 294px;
+}
+.aHelp2 .emailHelp {
+    color: #934400;
+    cursor: text;
+}
+.aHelp2:hover .emailHelp {
+    color: #934400;
+    cursor: text;
+    display: block;
+}
+.aHelp2 .emailHelp .emailHelp2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a15.gif") no-repeat scroll 0 0 transparent;
+    padding: 10px 5px 10px 35px;
+    width: 254px;
+}
+.yellowbg {
+    background: none repeat scroll 0 0 #FEE7BE;
+}
+.rightInner {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a20.gif") no-repeat scroll 0 bottom transparent;
+    float: right;
+    padding: 0 0 15px 4px;
+    width: 800px;
+}
+.rightInner2 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a19.gif") repeat-y scroll 0 0 transparent;
+    height: auto !important;
+    min-height: 530px;
+    overflow: hidden;
+}
+.rightInner2b {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a19.gif") repeat-y scroll 0 0 transparent;
+    height: auto !important;
+    min-height: 632px;
+    overflow: hidden;
+}
+.rightInner3 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a24.gif") no-repeat scroll 0 0 transparent;
+}
+.confirmBlock h3 {
+    background: none repeat scroll 0 0 #FFE7C0;
+    height: 30px;
+    padding-bottom: 8px;
+    position: relative;
+}
+.confirmBlock2 {
+  
+    padding: 12px 24px 0;
+}
+.sumInput {
+    border: 1px solid #943E00;
+    color: #934400;
+    height: 16px;
+    margin: 0 5px;
+    text-align: center;
+    width: 34px;
+}
+.sumInput2 {
+    border: 1px solid #943E00;
+    color: #934400;
+    height: 16px;
+    margin: 0 5px;
+    text-align: center;
+    width: 15px;
+}
+.codeInput {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 16px;
+    padding: 0 5px;
+    width: 108px;
+}
+.tableStyle01 {
+    border-collapse: collapse;
+    margin-bottom: 12px;
+}
+.tableStyle01 th {
+    background: none repeat scroll 0 0 #FFEFCD;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    font-weight: normal;
+    line-height: 14px;
+    padding: 4px 5px;
+    text-align: left;
+}
+.tableStyle01 th em {
+    font-family: Arial;
+    font-size: 11px;
+    font-style: normal;
+}
+.tableStyle01 td {
+    border-bottom: 1px solid #E9DACC;
+    line-height: 18px;
+    padding: 4px 5px;
+}
+.tableStyle01 td strong {
+    color: #E90000;
+    font-weight: normal;
+}
+.tableStyle01 td.centerTd {
+    text-align: center;
+}
+.tableStyle01 td img {
+    vertical-align: -1px;
+}
+.tableStyle01 td.centerTd img {
+    margin-right: 5px;
+}
+.tableStyle01 td span {
+    float: right;
+    padding-right: 15px;
+}
+.codeDiv dt {
+    float: left;
+    text-align: right;
+    width: 391px;
+}
+.codeDiv dd {
+    float: right;
+    line-height: 18px;
+    margin-bottom: 28px;
+    padding-left: 11px;
+    padding-right: 30px;
+    width: 340px;
+}
+.codeDiv dd strong {
+    font-size: 14px;
+}
+.codeDiv dd p {
+    color: #DC030D;
+}
+.codeDiv_b {
+    border-bottom: 1px dashed #CA9F72;
+}
+.codeDiv_b dt {
+    float: left;
+    text-align: right;
+    width: 391px;
+}
+.codeDiv_b dd {
+    float: right;
+    line-height: 18px;
+    margin-bottom: 15px;
+    padding-left: 11px;
+    width: 296px;
+}
+.codeDiv_b dd strong {
+    font-size: 14px;
+}
+.codeDiv_b dd p {
+    color: #DC030D;
+    font-weight: bold;
+}
+.productItem h4 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a26.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFDE4;
+    font-family: Arial;
+    font-size: 12px;
+    height: 34px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    padding: 5px 0 0 45px;
+}
+.productItem h4 strong {
+    font-family: "宋体";
+    font-size: 14px;
+}
+.tableStyle02 {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.tableStyle02 th {
+    background: none repeat scroll 0 0 #FFEFCD;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    font-weight: normal;
+    line-height: 14px;
+    padding: 4px 5px;
+    text-align: left;
+}
+.tableStyle02 th em {
+    font-family: Arial;
+    font-size: 11px;
+    font-style: normal;
+}
+.tableStyle02 td {
+    border-bottom: 1px solid #E9DACC;
+    line-height: 18px;
+    padding: 4px 5px;
+}
+.tableStyle02 td.tBorder {
+    border-right: 1px solid #E9DACC;
+}
+.tableStyle02 td.centerTd {
+    text-align: center;
+}
+.stepNext span {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a27.gif") no-repeat scroll 30px 3px transparent;
+    float: left;
+    line-height: 18px;
+    padding: 0 64px 0 50px;
+}
+.stepNext span strong {
+    font-size: 14px;
+}
+.addCode {
+    cursor: pointer;
+}
+.codeArea {
+    display: none;
+    padding-bottom: 10px;
+}
+.confirmBlock3 {
+    padding: 0 29px;
+}
+.dlStyle04 dt, .dlStyle04 dd {
+    display: block;
+    line-height: 18px;
+    padding-bottom: 20px;
+}
+.dlStyle04 dt {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a09.gif") no-repeat scroll 0 5px transparent;
+    float: left;
+    padding-left: 13px;
+    width: 270px;
+}
+.dlStyle04 dt strong {
+    font-size: 14px;
+}
+.dlStyle04 dd {
+    color: #707070;
+    float: left;
+    margin-left: -100px;
+    width: 537px;
+}
+.dlStyle04 dd span {
+    padding-right: 40px;
+}
+.dlStyle04 dd .input8 {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 8px;
+    padding: 0 5px;
+    width: 146px;
+}
+.dlStyle04 dd .input9 {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 8px;
+    padding: 0 5px;
+    width: 86px;
+}
+.infoDiv {
+    padding-top: 20px;
+}
+.confirmBlock4 {
+    padding: 0 13px;
+}
+.payDiv2 {
+    margin-bottom: 20px;
+    padding: 10px 20px 20px;
+}
+.totalAll {
+    color: #DC030D;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px 20px;
+}
+.totalAll strong {
+    font-size: 16px;
+}
+.payDiv {
+    padding: 10px 20px 20px;
+}
+.payDiv dt {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a30.gif") no-repeat scroll 0 6px transparent;
+    color: #E60012;
+    float: left;
+    line-height: 24px;
+    padding-left: 13px;
+    width: 173px;
+}
+.payDiv dt strong {
+    font-size: 14px;
+}
+.payDiv dd {
+    float: left;
+    font-size: 14px;
+    line-height: 24px;
+    width: 526px;
+}
+.payDiv dd strong {
+    color: #E60012;
+    font-size: 14px;
+    font-weight: normal;
+}
+.payDiv dd select {
+    color: #E60012;
+    margin: 0 5px;
+}
+.payDiv span.bc {
+    color: #E60012;
+    font-size: 14px;
+    font-weight: bold;
+}
+.payUl {
+    margin-bottom: 10px;
+}
+.payUl li {
+    font-size: 14px;
+    padding: 10px 0;
+}
+.payUl li strong {
+    font-size: 16px;
+}
+.payUl2 {
+    margin-left: 10px;
+    width: 456px;
+}
+.payUl2 li {
+    float: left;
+    padding: 5px 0;
+    width: 152px;
+}
+.payUl2 li input {
+    vertical-align: 8px;
+}
+.noticeStyle01 {
+    line-height: 160%;
+    padding: 20px 10px 0;
+}
+.noticeStyle01 dl dt {
+    float: left;
+    font-weight: bold;
+    width: 92px;
+}
+.noticeStyle01 dl dd {
+    float: left;
+    width: 600px;
+}
+.noticeStyle01 dl dd ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a14.gif") no-repeat scroll 0 8px transparent;
+    padding-bottom: 8px;
+    padding-left: 5px;
+}
+.payDiv3 {
+    display: none;
+}
+.noticeStyle01 dl dd ul li span {
+    background: none repeat scroll 0 0 #FAEAD1;
+    color: #DC030D;
+    padding: 3px 5px;
+}
+.orderSuccess {
+    margin: 0 auto;
+    padding-top: 72px;
+    width: 596px;
+}
+.titleStyle01 {
+    margin-bottom: 16px;
+    text-align: center;
+}
+.pStyle01 {
+    font-family: Arial;
+    line-height: 24px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.pStyle01 span {
+    font-family: "宋体";
+    font-size: 14px;
+    font-weight: bold;
+}
+.pStyle01 span strong {
+    color: #E60012;
+    font-family: Arial;
+    font-size: 32px;
+}
+.pStyle01 a {
+    font-size: 12px;
+    text-decoration: none;
+}
+.pStyle01 span a {
+    font-size: 14px;
+    text-decoration: none;
+}
+.dlStyle05 dt {
+    padding-bottom: 5px;
+}
+.dlStyle05 dt a {
+    text-decoration: none;
+}
+.dlStyle05 dd ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a32.gif") no-repeat scroll 0 5px transparent;
+    line-height: 18px;
+    padding-left: 12px;
+}
+.dlStyle05 dd ul li strong {
+    color: #E60012;
+    font-weight: normal;
+}
+.leftInner {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a33_b.gif") no-repeat scroll 0 -1px transparent;
+    float: left;
+    height: 533px;
+    padding: 12px 10px 0;
+    width: 176px;
+}
+.leftInner ul li {
+    height: 35px;
+    margin-bottom: 9px;
+    width: 176px;
+}
+.leftInner ul li a {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a35.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 30px;
+    line-height: 13px;
+    padding: 5px 0 0 10px;
+    width: 166px;
+}
+.leftInner ul li a:hover, .leftInner ul li a.on {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a34.gif") no-repeat scroll 0 0 transparent;
+    color: #934400;
+    text-decoration: none;
+}
+.recordDiv {
+    padding: 12px 10px 0;
+}
+.tableStyle03 {
+    border-collapse: collapse;
+    margin-bottom: 0;
+}
+.tableStyle03 th {
+    background: none repeat scroll 0 0 #FFEFCD;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    line-height: 32px;
+    padding: 4px 15px;
+    text-align: left;
+}
+.tableStyle03 td {
+    border-bottom: 1px solid #E9DACC;
+    line-height: 24px;
+    padding: 4px 15px;
+}
+.tableStyle03 td.status img {
+    margin: 0 10px;
+    vertical-align: -20px;
+}
+.tableStyle03 td img {
+    margin-right: 3px;
+    vertical-align: -1px;
+}
+.tableStyle03 td a {
+    text-decoration: none;
+}
+.newtable th {
+    padding: 0;
+}
+.newtable td {
+    border: medium none;
+    line-height: 18px;
+    padding: 0;
+}
+.orderDiv h3 {
+    color: #FFFDE4;
+    font-weight: bold;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 5px;
+    padding-left: 35px;
+}
+.orderDiv h3.cI {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a41.gif") no-repeat scroll 0 0 transparent;
+}
+.orderDiv h3.oI {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a42.gif") no-repeat scroll 0 0 transparent;
+}
+.orderDiv h3 strong {
+    font-size: 14px;
+}
+.orderDiv h3 span {
+    cursor: pointer;
+    float: right;
+    padding-right: 15px;
+    text-decoration: none;
+}
+.customerDiv {
+    padding: 10px 30px 15px;
+}
+.customerDiv .dlStyle04 dt strong {
+    font-size: 12px;
+    font-weight: normal;
+}
+.customerDiv_b {
+    border-bottom: 1px dashed #CA9F72;
+    padding: 10px 0 0;
+}
+.customerDiv_b .dlStyle04 dt strong {
+    font-size: 12px;
+    font-weight: normal;
+}
+.otherDiv {
+    padding: 20px 0 0;
+}
+.otherDiv .dlStyle04 dt strong {
+    font-size: 12px;
+    font-weight: normal;
+}
+.otherDiv .dlStyle04 dd {
+    margin-left: -135px;
+}
+.orderDiv {
+    background: none repeat scroll 0 0 #FFFDE4;
+    border: 1px solid #FEEAC7;
+    display: none;
+    margin: 5px 0 0;
+    padding: 0 20px 10px;
+}
+.recordDiv .tableStyle02 th {
+    line-height: 32px;
+    padding: 0 5px;
+}
+.promoMessage {
+    line-height: 160%;
+    padding-bottom: 10px;
+}
+.promoMessage span {
+    float: right;
+    padding-right: 50px;
+    position: relative;
+}
+.promoMessage span a {
+    cursor: pointer;
+}
+.promoMessage .helpCode {
+    display: none;
+    left: -160px;
+    position: absolute;
+    top: 33px;
+    width: 370px;
+}
+.promoMessage .helpCode2 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #993F0A;
+    color: #707070;
+    left: 0;
+    padding: 5px;
+    position: absolute;
+    top: 12px;
+    width: 368px;
+    z-index: 1;
+}
+.promoMessage .helpCode2 p {
+    padding: 10px 0 5px;
+}
+.helpCodeClose {
+    cursor: pointer;
+    height: 11px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 12px;
+}
+.spanHide {
+    display: none;
+}
+.input10 {
+    border: 1px solid #FFFFFF;
+    color: #707070;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    width: 85px;
+}
+.input11 {
+    border: 1px solid #943E00;
+    color: #707070;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    width: 85px;
+}
+.step3Left {
+    float: left;
+    width: 586px;
+}
+.step3Right {
+    float: left;
+    width: 334px;
+}
+.dlStyle06 dt {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a09.gif") no-repeat scroll 0 12px transparent;
+    float: left;
+    line-height: 22px;
+    padding: 6px 0 6px 15px;
+    width: 145px;
+}
+.dlStyle06 dt strong {
+    font-size: 14px;
+    font-weight: bold;
+}
+.dlStyle06 dd {
+    line-height: 22px;
+    padding: 6px 0;
+}
+.tips {
+    background: none repeat scroll 0 0 #FFFDE4;
+    border: 1px solid #FFCB75;
+    line-height: 160%;
+    padding: 10px;
+    width: 290px;
+}
+.tips span {
+    padding-left: 10px;
+}
+.tips span a {
+    text-decoration: none;
+}
+.tips ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a32.gif") no-repeat scroll 0 5px transparent;
+    padding-left: 10px;
+}
+.tips .tipsEn ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a32.gif") no-repeat scroll 0 8px transparent;
+}
+.tips .tipsEn {
+    display: none;
+}
+.step3Notice {
+    color: #7D7D7D;
+    line-height: 24px;
+    padding: 15px 0 0 15px;
+}
+.step3Notice dl dt a {
+    color: #7D7D7D;
+    text-decoration: none;
+}
+.btnNext3 {
+    margin-top: 25px;
+}
+a.forget {
+    color: #707070;
+    text-decoration: none;
+}
+.selectLi {
+    padding: 0 3px;
+    position: relative;
+}
+.selectInput {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a43.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #E60012;
+    font-size: 14px;
+    font-weight: bold;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 3px;
+    text-align: center;
+    width: 30px;
+}
+.SelectButton {
+    cursor: pointer;
+    margin-left: -4px;
+    vertical-align: -5.5px;
+}
+.selectLi ul {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: -moz-use-text-color #934400 #934400;
+    border-right: 1px solid #934400;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    display: none;
+    left: 3px;
+    position: absolute;
+    top: 15px;
+    width: 35px;
+}
+.selectLi ul li {
+    color: #E60012;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 0 3px;
+    text-align: center;
+}
+:root .SelectButton img {
+}
+.blockRight .red {
+    line-height: 20px;
+}
+.blockRight span.red {
+    font-size: 12px;
+    text-align: justify;
+}
+.orderNotice dt {
+    color: #5F890B;
+    float: left;
+    padding-left: 5px;
+    width: 38px;
+}
+.orderNotice dd {
+    color: #5F890B;
+    float: left;
+    width: 145px;
+}
+.contentBlock5 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a04.gif") no-repeat scroll 620px 16px transparent;
+    height: auto !important;
+    min-height: 551px;
+    overflow: visible;
+}
+.contentBlock5_b {
+    height: auto !important;
+    margin: 0 auto;
+    min-height: 551px;
+    overflow: visible;
+    width: 945px;
+}
+.contentBlock6 {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a08.gif") no-repeat scroll 0 bottom transparent;
+    height: auto !important;
+    min-height: 58px;
+    overflow: visible;
+    padding: 0 40px 11px;
+}
+.contentBlock6_b {
+    background: url("http://www.4008823823.com.cn/kfcios/imgnew/n_d.gif") no-repeat scroll 0 bottom transparent;
+    height: auto !important;
+    min-height: 20px;
+    overflow: visible;
+    padding: 0 40px 11px;
+}
+.yzmP {
+    height: 70px;
+}
+.newtip {
+    background: none repeat scroll 0 0 #FFFDE4;
+    border: 1px solid #FFCB75;
+    color: #934500;
+    left: 551px;
+    overflow: hidden;
+    padding: 5px 0 5px 3px;
+    position: absolute;
+    text-align: left;
+    top: 13px;
+    width: 210px;
+}
+.newtip span {
+    padding-left: 10px;
+}
+.newtip span a {
+    text-decoration: none;
+}
+.newtip ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a32.gif") no-repeat scroll 0 5px transparent;
+    font-family: Verdana,Geneva,sans-serif,"宋体";
+    line-height: 18px;
+    padding-left: 10px;
+}
+.newtip .tipsEn ul li {
+    background: url("http://www.4008823823.com.cn/kfcios/images4/new/a32.gif") no-repeat scroll 0 5px transparent;
+    font-family: Verdana,Geneva,sans-serif,"宋体";
+    font-size: 11px;
+    line-height: 13px;
+}
+.newtip .tipsEn {
+    display: none;
+}
+.notinfo {
+    color: #944302;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 250%;
+    margin: 0 auto;
+    padding: 120px 0 0;
+    text-align: center;
+    width: 710px;
+}
+.notinfo2 {
+    color: #944302;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 250%;
+    margin: 0 auto;
+    padding: 30px 0 0;
+    text-align: center;
+    width: 710px;
+}
+.yh1 {
+    border-bottom: 1px dashed #C7A17D;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 15px 15px;
+}
+.yh1 .rtxt {
+    background: url("http://www.4008823823.com.cn/kfcios/imgnew/inc2.gif") no-repeat scroll right top transparent;
+    color: #E70006;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    padding: 0 25px 0 0;
+    text-align: right;
+    text-decoration: none;
+    width: 280px;
+}
+.yItem {
+    padding: 10px 0 0;
+}
+.yItem h4 {
+    background: url("http://www.4008823823.com.cn/kfcios/imgnew/bar.jpg") no-repeat scroll 0 0 transparent;
+    color: #FFFDE4;
+    font-family: Arial;
+    font-size: 12px;
+    height: 34px;
+    line-height: 32px;
+    margin-bottom: 5px;
+    padding: 5px 0 0 45px;
+}
+.yItem h4 strong {
+    font-family: "宋体";
+    font-size: 14px;
+}
+.cusSel {
+    background: url("http://www.4008823823.com.cn/kfcios/imgnew/arrow_d.gif") no-repeat scroll right center transparent;
+    border: 1px solid #943F00;
+    color: #717171;
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 5px 0 0;
+    padding: 0 15px 0 5px;
+    text-align: left;
+    width: 150px;
+}
+.cusSelOpen {
+    background: url("http://www.4008823823.com.cn/kfcios/imgnew/arrow_u.gif") no-repeat scroll right center transparent;
+    border: 1px solid #943F00;
+    color: #717171;
+    cursor: pointer;
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin: 0 5px 0 0;
+    padding: 0 15px 0 5px;
+    position: relative;
+    text-align: left;
+    width: 150px;
+}
+.curSelCon {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #943F00;
+    left: -1px;
+    min-height: 21px;
+    position: absolute;
+    top: 19px;
+    width: 170px;
+}
+.curSelCon a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: #717171 !important;
+    display: block;
+    height: 19px;
+    line-height: 19px;
+    padding: 0 0 0 4px;
+    text-align: left;
+    text-decoration: none !important;
+    width: 164px;
+}
+.curSelCon a:visited {
+    color: #717171 !important;
+    text-decoration: none;
+}
+.curSelCon a:hover {
+    background: none repeat scroll 0 0 #DEC8B3;
+    border: 1px solid #DEC8B3;
+    color: #717171 !important;
+    text-decoration: none;
+}
+.curSelCon a:active {
+    color: #717171 !important;
+    text-decoration: none;
+}
+a.alink-popoo {
+}
+a.alink-popoo:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chooseBox2 {
+ 
+    width: 350px;
+}
+.chooseBox2 .theadWap {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") repeat-x scroll 0 -220px transparent;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+.chooseBox2 .theadWap .theadL {
+    float: left;
+    height: 30px;
+    margin: -1px 0 0 -1px;
+    position: relative;
+}
+.chooseBox2 .theadWap .theadL i {
+    float: left;
+    padding: 0 15px;
+}
+.chooseBox2 .theadWap .theadL i.cur {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -254px transparent;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #E7E7E7;
+    font-weight: 800;
+}
+.chooseBox2 .theadWap .theadL .icon {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -453px -288px transparent;
+    float: left;
+    height: 20px;
+    width: 12px;
+}
+.chooseBox2 .theadWap .theadLine {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -420px transparent;
+    float: left;
+    height: 29px;
+    margin-left: -3px;
+    overflow: hidden;
+    width: 2px;
+}
+.chooseBox2 .theadWap .theadR {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll left -421px transparent;
+    float: right;
+    line-height: 29px;
+    width: 74px;
+}
+.chooseBox2 .theadWap .theadR i.showTab {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -446px -390px transparent;
+    color: #333333;
+    cursor: pointer;
+    float: left;
+    height: 29px;
+    padding-left: 18px;
+    width: 54px;
+}
+.chooseBox2 .theadWap .theadR i.hiddTab {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -446px -369px transparent;
+    color: #333333;
+    cursor: pointer;
+    float: left;
+    height: 29px;
+    padding-left: 18px;
+    width: 54px;
+}
+.chooseBox2 .theadWap .theadR i a:hover {
+    text-decoration: none;
+}
+.chooseBox2 .getWap {
+    margin-top: -1px;
+    position: relative;
+    width: 350px;
+
+}
+.chooseBox2 .allBrand {
+    float: right;
+    height: 24px;
+    margin-bottom: -32px;
+    padding: 8px 5px 0 0;
+    position: relative;
+}
+.chooseBox2 .allBrand a {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -147px -289px transparent;
+    color: #333333;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    padding-left: 5px;
+    width: 64px;
+}
+.chooseBox2 .allBrand a:hover {
+    text-decoration: none;
+}
+.chooseBox2 .getParam {
+  
+    line-height: 18px;
+    margin: 0 10px;
+    padding: 7px 0 2px;
+    width: 350px;
+}
+.chooseBox2 .getParam span {
+    color: #777777;
+    float: left;
+    height: 18px;
+    overflow: hidden;
+    text-align: right;
+ 	 padding-right: 10px;
+}
+.chooseBox2 .getParam em.all {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -62px -592px transparent;
+
+    overflow: hidden;
+    width: 43px;
+}
+.chooseBox2 .getParam em.all a {
+    color: #0055AA;
+
+    height: 18px;
+    text-align: center;
+   
+}
+.chooseBox2 .getParam em.all a:hover {
+    background-color: #FEE8DA;
+    color: #FF6600;
+    text-decoration: none;
+}
+.chooseBox2 .getParam em.cur a {
+    background: none repeat scroll 0 0 #FF6600;
+    color: #FFFFFF;
+}
+.chooseBox2 .getParam em.cur a:hover {
+    background: none repeat scroll 0 0 #FF6600;
+    color: #FFFFFF;
+}
+.chooseBox2 .getParam dl {
+
+    width: 300px;
+}
+.chooseBox2 .getParam dd.less {
+    height: 24px;
+    overflow: hidden;
+}
+.chooseBox2 .getParam dd i {
+    float: left;
+    height: 24px;
+    white-space: nowrap;
+}
+.chooseBox2 .getParam dd i a {
+    color: #0055AA;
+    float: left;
+    height: 18px;
+    margin-right: 18px;
+    padding: 1px 3px 0;
+}
+.chooseBox2 .getParam dd i a:hover {
+    background-color: #FEE8DA;
+    color: #FF6600;
+    text-decoration: none;
+}
+.chooseBox2 .getParam dd i a.null {
+    color: #777777;
+}
+.chooseBox2 .getParam dd i a.null:hover {
+    background: none repeat scroll 0 0 transparent;
+    cursor: text;
+}
+.chooseBox2 .getParam dd i a.cur, .chooseBox2 .getParam dd i a.cur:hover {
+    background-color: #FF6600;
+    color: #FFFFFF;
+    margin-right: 4px;
+    padding-right: 17px;
+    position: relative;
+}
+.chooseBox2 .getParam dd i a.cur em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -87px -562px transparent;
+    cursor: pointer;
+    display: inline-block;
+    height: 13px;
+    position: absolute;
+    right: 2px;
+    top: 3px;
+    width: 13px;
+}
+.chooseBox2 .getParam dd i a.cur:hover em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -578px transparent;
+}
+.chooseBox2 .getParam dd i.on a.cur em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -578px transparent;
+}
+.chooseBox2 .getParam .moreitem {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -448px -495px transparent;
+    cursor: pointer;
+    float: right;
+    margin-top: -22px;
+    padding-left: 17px;
+    width: 35px;
+}
+.chooseBox2 .getParam .lessitem {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -448px -466px transparent;
+    cursor: pointer;
+    float: right;
+    margin-top: -22px;
+    padding-left: 17px;
+    width: 35px;
+}
+.chooseBox2 .getBrand dd {
+    width: 585px;
+}
+.chooseBox2 .getBrand .multi {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -449px -321px transparent;
+    cursor: pointer;
+    float: right;
+    margin-top: -22px;
+    padding-left: 17px;
+    width: 98px;
+}
+.chooseBox2 .getBrand .multi a {
+    color: #0055AA;
+}
+.chooseBox2 .getBrand .multi a:hover {
+    color: #FF6600;
+    text-decoration: none;
+}
+.chooseBox2 .getBrand .exit {
+    display: none;
+}
+.chooseBox2 .getMulti {
+    background: none repeat scroll 0 0 #FFFBF0;
+    border: 1px solid #FF9900;
+    margin: 0;
+    padding: 6px 9px 2px;
+}
+.chooseBox2 .getMulti dd i a.cur em, .chooseBox2 .getMulti dd i a.cur:hover em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -594px transparent;
+}
+.chooseBox2 .getMulti .exit {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -89px -575px transparent;
+    display: block;
+    float: right;
+    margin: -22px -5px 0 0;
+    padding-left: 13px;
+    position: relative;
+}
+.chooseBox2 .getMulti .exit a, .chooseBox2 .getMulti .exit a:hover {
+    color: #FF6600;
+    text-decoration: none;
+}
+.chooseBox2 .getMulti .multi {
+    display: none;
+}
+.chooseBox2 .allDiv {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 510px;
+    z-index: 20;
+}
+.chooseBox2 .allDiv .allTad {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #D4E5F9;
+    border-color: #003398 #003398 -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    height: 21px;
+    margin-left: 440px;
+    margin-top: 0;
+    padding: 2px 2px 0;
+    position: relative;
+    width: 64px;
+}
+.chooseBox2 .allDiv .allTad a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    position: absolute;
+    text-align: center;
+    width: 64px;
+}
+.chooseBox2 .allDiv .allTad a:hover {
+    text-decoration: none;
+}
+.chooseBox2 .allDiv .allTad a em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -454px -403px transparent;
+    display: inline-block;
+    height: 7px;
+    margin-left: 3px;
+    width: 7px;
+}
+.chooseBox2 .allDiv .allFat {
+    background: none repeat scroll 0 0 #D4E5F9;
+    border: 1px solid #003398;
+    height: 224px;
+    margin-top: -1px;
+    overflow: hidden;
+    padding: 2px;
+    width: 504px;
+}
+.chooseBox2 .allDiv .allFat dl {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: 224px;
+    overflow: auto;
+    width: 504px;
+}
+.chooseBox2 .allDiv .allFat dd {
+    float: left;
+    line-height: 24px;
+    padding: 3px 0;
+    width: 484px;
+}
+.chooseBox2 .allDiv .allFat dd span {
+    color: #767676;
+    float: left;
+    font-family: "微软雅黑","黑体";
+    font-size: 14px;
+    font-weight: 700;
+    height: 24px;
+    padding-left: 16px;
+    width: 28px;
+}
+.chooseBox2 .allDiv .allFat dd i {
+    float: right;
+    overflow: hidden;
+    width: 440px;
+}
+.chooseBox2 .allDiv .allFat dd a {
+    color: #0055AA;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 6px;
+    margin-top: 6px;
+    padding: 0 4px;
+}
+.chooseBox2 .allDiv .allFat dd a.null {
+    color: #777777;
+}
+.chooseBox2 .allDiv .allFat dd a.null:hover {
+    background: none repeat scroll 0 0 transparent;
+    color: #777777;
+}
+.chooseBox2 .allDiv .allFat dd a:hover {
+    background-color: #FEE8DA;
+    color: #FF6600;
+    text-decoration: none;
+}
+.chooseBox2 .allDiv .allFat dd.dat1 {
+    background: none repeat scroll 0 0 #FAFAFA;
+}
+.chooseBox2 .selfBtn {
+    float: left;
+    line-height: 20px;
+    position: relative;
+    z-index: 10;
+}
+.chooseBox2 .selfBtn .defBtn {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -87px -313px transparent;
+    border-right: 1px solid #CDCDCD;
+    color: #333333;
+    display: inline-block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 15px 0 6px;
+    position: relative;
+    white-space: nowrap;
+}
+.chooseBox2 .selfBtn .defBtn:hover {
+    color: #333333;
+    text-decoration: none;
+}
+.chooseBox2 .selfBtn .defBtn em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -454px -382px transparent;
+    height: 4px;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    width: 7px;
+}
+.chooseBox2 .priceDiv {
+    left: -999px;
+    position: absolute;
+    top: -999px;
+}
+.chooseBox2 .pricePos {
+    left: -1px;
+    top: -3px;
+}
+.chooseBox2 .priceDiv .priceTad {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #D4E5F9;
+    border-color: #003398 #003398 -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    float: left;
+    height: 20px;
+    margin-top: -112px;
+    padding: 2px 2px 0;
+    position: relative;
+}
+.chooseBox2 .priceDiv .priceTad a {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-right: 0 none;
+    color: #333333;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 14px 0 4px;
+    white-space: nowrap;
+}
+.chooseBox2 .priceDiv .priceTad a:hover {
+    text-decoration: none;
+}
+.chooseBox2 .priceDiv .priceTad a em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -454px -403px transparent;
+    height: 4px;
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    width: 7px;
+}
+.chooseBox2 .priceDiv .priceFat {
+    background: none repeat scroll 0 0 #D4E5F9;
+    border: 1px solid #003398;
+    height: 84px;
+    margin-top: 21px;
+    overflow: hidden;
+    padding: 2px;
+    width: 254px;
+}
+.chooseBox2 .priceDiv .priceFat dl {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: 84px;
+    overflow: hidden;
+    width: 254px;
+}
+.chooseBox2 .priceDiv .priceFat dt {
+    float: right;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    padding-right: 15px;
+}
+.chooseBox2 .priceDiv .priceFat dt input {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -610px transparent;
+    border: medium none;
+    color: #8A3202;
+    cursor: pointer;
+    font-size: 12px;
+    height: 20px;
+    text-align: center;
+    width: 50px;
+}
+.chooseBox2 .priceDiv .priceFat dd {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    width: 110px;
+}
+.chooseBox2 .priceDiv .priceFat dd input {
+    vertical-align: middle;
+}
+.chooseBox2 .priceDiv .priceFat dd a:link, .chooseBox2 .priceDiv .priceFat dd a:visited {
+    text-decoration: none;
+}
+.chooseBox2 .priceDiv .priceFat dd.s5 a:link, .chooseBox2 .priceDiv .priceFat dd.s5 a:visited {
+    text-decoration: none;
+}
+.chooseBox2 .priceDiv .priceFat dd.s1 {
+    clear: both;
+    color: #767676;
+    float: left;
+    margin-right: 0;
+    padding-left: 11px;
+    width: 170px;
+}
+.chooseBox2 .priceDiv .priceFat dd.s1 input {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 3px;
+}
+.chooseBox2 .priceDiv .priceFat dd.s2 {
+    background: url("http://www1.pconline.com.cn/2011/product/img/imgv_kedubiao.gif") no-repeat scroll 10px 5px transparent;
+    height: 37px;
+    margin-right: 0;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+.chooseBox2 .priceDiv .priceFat .scroll_area {
+    background: url("http://www1.pconline.com.cn/2011/product/img/img_kedubiao_on.gif") repeat-x scroll 0 0 transparent;
+    font-size: 1px;
+    height: 4px;
+    position: absolute;
+    top: 24px;
+}
+.chooseBox2 .priceDiv .priceFat dd img {
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+}
+.chooseBox2 .hadWap {
+    color: #777777;
+    line-height: 18px;
+    margin: 0 10px;
+    padding: 8px 0;
+    width: 768px;
+}
+.chooseBox2 .hadWap a:hover {
+    text-decoration: none;
+}
+.chooseBox2 .hadWap .hadL {
+    float: left;
+    width: 700px;
+}
+.chooseBox2 .hadWap .hadL strong {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    text-align: right;
+    width: 68px;
+}
+.chooseBox2 .hadWap .hadL .choose {
+    float: left;
+    width: 632px;
+}
+.chooseBox2 .hadWap .hadL a:hover {
+    color: #FFFFFF;
+}
+.chooseBox2 .hadWap .hadL a {
+    background-color: #0055AA;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 18px;
+    margin: 0 10px 3px 0;
+    padding: 0 17px 0 4px;
+    position: relative;
+    white-space: nowrap;
+}
+.chooseBox2 .hadWap .hadL a em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -87px -562px transparent;
+    cursor: pointer;
+    height: 13px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 15px;
+}
+.chooseBox2 .hadWap .hadL a:hover em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -562px transparent;
+}
+.chooseBox2 .hadWap .hadL a.on em {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -562px transparent;
+}
+.chooseBox2 .hadWap .hadL .num {
+    white-space: nowrap;
+}
+.chooseBox2 .hadWap .hadL .num i {
+    color: #CC0000;
+    font-size: 14px;
+    font-weight: 700;
+}
+.chooseBox2 .hadWap .hadR {
+    float: right;
+    height: 18px;
+    width: 68px;
+}
+.chooseBox2 .hadWap .hadR a {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -443px -348px transparent;
+    color: #333333;
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 20px;
+    width: 48px;
+}
+.chooseBox2 .hadWap .hadR a:hover {
+    color: #FF6600;
+}
+.chooseBox2 .hadWap, .chooseBox2 .getParam .clear {
+}
+.chooseBox2 .getAdvance {
+    border-bottom: 1px dashed #D1D1D1;
+    line-height: 22px;
+    margin: 0 10px;
+    overflow: hidden;
+    padding: 7px 0 2px;
+    width: 768px;
+}
+.chooseBox2 .getAdvance dt {
+    color: #777777;
+    float: left;
+    text-align: right;
+    width: 68px;
+}
+.chooseBox2 .getAdvance dd {
+    color: #0055AA;
+    float: left;
+    margin-left: -8px;
+    width: 708px;
+}
+.chooseBox2 .getAdvance dd i {
+    float: left;
+    height: 24px;
+    line-height: 22px;
+    min-width: 108px;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+.chooseBox2 .getAdvance dd input {
+    height: 15px;
+    margin: -2px 5px 0 0;
+    vertical-align: middle;
+    width: 13px;
+}
+.chooseBox2 .getAdvanceEx {
+    height: 48px;
+}
+.chooseBox2 .getAdvanceAuto {
+    height: auto;
+}
+.chooseBox2 .getAdvanceEx dd {
+    width: 680px;
+}
+.chooseBox2 .moreBrand {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll -448px -495px transparent;
+    cursor: pointer;
+    float: right;
+    padding-left: 17px;
+    position: absolute;
+    right: 53px;
+    top: 33px;
+}
+.chooseBox2 .moreBrand-close {
+    background-position: -448px -467px;
+}
+.chooseBox .hadBtn {
+    padding: 11px 0;
+    text-align: center;
+}
+.chooseBox2 .hadBtn .queryBtn {
+    background: url("http://www1.pconline.com.cn/2011/product/img/list.png") no-repeat scroll 0 -469px transparent;
+    color: #8C3200;
+    display: inline-block;
+    font: 700 14px/29px 宋体,arial,sans-serif;
+    height: 29px;
+    width: 120px;
+}
+.chooseBox2 .hadBtn .queryBtn:hover {
+    text-decoration: none;
+}
+.chooseBox .getLine {
+    border-bottom: 1px solid #D1D1D1;
+}

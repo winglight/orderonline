@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	<ui:style src="xxx.css" field="new2"></ui:style>
+	<ui:style src="new2.css" field="new1"></ui:style>
+	<g:HTMLPanel>
+
+
+			<div class="public_container">
+			
+			
+
+  
+				<!--content_box start -->
+				<div class="spx5px"></div>
+				<div id="content" class="content_box">
+					<!--content_box_left start -->
+					<div class="content_box_left">
+						<div style="margin-top:0px !important" class="content_box_left_main">
+							<!-- 左侧菜单 -->
+							<div id="showMenu" class="content_box_left_main_left">
+								<div id="menu_china"
+									style="width: 196px; overflow: hidden; float: left; background: none repeat scroll 0% 0% rgb(255, 255, 255); margin-top: 0px;">
+									<div style="width: 196px;overflow: hidden; background: #FFEFCD;">
+										<div id="china" style="display: block;">
+											<h1 class="content_box_left_main_left_h1"> 菜单</h1>
+											<span class="content_box_left_main_left_c"> <!-- weij 2011-12-22 update -->
+												
+													<g:TextBox ui:field="queryKey" title="输入菜品名称" width="140px" /> <g:Anchor ui:field="querybtn" text="搜索" href="#"  />
+												
+												<!-- update end -->
+												<h2 class="content_box_left_main_left_c_h2 bmargin cursor">
+													<g:InlineLabel ui:field="menutypeAll" text="全部" />
+												</h2>
+												
+												<g:FlowPanel ui:field="tabpage" />
+												
+
+											</span>
+											<span class="content_box_left_main_left_b_2"></span>
+										</div>
+									</div>
+									</div>
+								</div>
+								<div style="" id="c_content" class="content_box_left_main_right">
+								          <h1 class="content_box_left_main_right_h1" id="tab_obj" style=""> <span>点击图片看产品详情</span> <a href="#" >看首页广告信息 &gt;&gt;</a> </h1>
+									<!-- 产品信息 -->
+									<div id="showProductsNew">
+										<div id="showP_c" style="">
+											<table width="100%" cellspacing="0" cellpadding="0"
+												border="0">
+												<tbody>
+													<tr>
+														<td class="content_box_left_main_right_c">
+															<ul class="content_box_left_main_right_c_ul">
+
+																<g:FlowPanel ui:field="resultPanel" />
+															</ul>
+															<div id="clear_div"></div>
+
+															<div id="rewardlist_page2" class="{new1.pager}">
+																<div class="{new1.pager-left}" style='display:none;'>
+																	每页显示条数
+																	<g:ListBox ui:field="pageNumber" styleName="{new2.select}" />
+																</div>
+
+																<div class="{new1.pager-right}">
+																	<g:FlowPanel ui:field="resultpage" />
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<span class="content_box_left_main_right_b"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="clear_div"></div>
+						</div>
+					</div>
+					    <div class="content_box_right_1" style="float: right"> <a href="#"><g:Image ui:field="ordernow" url="http://www.4008823823.com.cn/kfcios/images2/b5.gif" height="99" width="194" pixelSize="194,99" /> </a>
+					      <div id="c"> <g:Image url="http://www.4008823823.com.cn/kfcios/images2/b5_3.gif" /><!-- weij 2012-01-10 更改路径 --> 
+					      </div>
+					      <div id="e" style="display: none;"> <g:Image url="http://www.4008823823.com.cn/kfcios/images2/b5_2.gif"  /> </div>
+					    </div>
+					<div id="orderArea" class="content_box_right" style="margin-top: 0px;">
+
+										
+						<div id="showOrder" class="content_box_right_dd">
+
+							<div id="showO_c" style="">
+								<div class="content_box_right_dd">
+									<h1 class="content_box_right_dd_h1">我的订单</h1>
+
+									<div class="content_box_right_dd_c">
+
+
+
+
+
+
+										<span id="r_c" class="content_box_right_dd_c_1">
+											提醒：根据你最终提交订单时间，
+											<br />
+											送餐时间可能略有调整。
+										</span>
+
+
+
+										<h3>
+											当前菜品：
+											<g:InlineLabel ui:field="bookingTitle"
+												styleName="redlable" />
+										</h3>
+
+
+										<div class="{new1.table}">
+											<g:FlowPanel ui:field="bookingPanel" />
+										</div>
+
+
+										<span class="order_bg_info">
+											总数:
+											<em>
+												<g:InlineLabel ui:field="dishesNumber"
+													styleName="{new2.bluebable}" />
+												个
+											</em>
+										</span>
+										<span class="order_bg_info">
+											合计/Total:
+											<em>
+												<g:InlineLabel ui:field="dishesMoney"
+													styleName="{new2.bluebable}" />
+												元
+											</em>
+										</span>
+										<span class="order_bt">
+											<a href="javascript:;">
+												<g:Image ui:field="returnBtn"
+													url="http://www.4008823823.com.cn/kfcios/images2/e6.gif"
+													title="返回修改预定信息" />
+											</a>
+
+											<a onclick="Submitorder();" href="javascript:;">
+												<g:Image ui:field="addBtn"
+													url="http://www.4008823823.com.cn/kfcios/images2/e7.gif"
+													title="立刻预定" />
+											</a>
+										</span>
+									</div>
+									<span class="content_box_right_2_b"></span>
+
+								</div>
+							</div>
+
+
+
+						</div>
+						<div id="showHot" class="content_box_right_2">
+							<table width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+									<tr>
+										<td>
+											<h1 class="content_box_right_2_h1"></h1>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="content_box_right_2_c">
+												<ul class="content_box_right_2_c_ul">
+													<li>
+														<div>
+															<h3>
+																用户预订信息：
+															</h3>
+														</div>
+													</li>
+													<li>
+														<h3 style='color:red;'>
+															电话：
+															<g:InlineLabel ui:field="phone" /><br></br>
+															城市:
+															<g:InlineLabel ui:field="city" /><br></br>
+															餐厅:
+															<g:InlineLabel ui:field="restaurant" /><br></br>
+															订餐人:
+															<g:InlineLabel ui:field="orderUser" /><br></br>
+															人数:
+															<g:InlineLabel ui:field="number" /><br></br>
+															包间要求:
+															<g:InlineLabel ui:field="room" /><br></br>
+														</h3>
+													</li>
+
+
+												</ul>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<span class="content_box_right_2_b"></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+				</div>
+				<!--content_box end -->
+				<div id="clear_div"></div>
+				<div class="spx5px"></div>
+			 
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+	 
+		<g:HTMLPanel>
+
+			<div class="elt">
+				<div id="login">
+					<div class="elt_login">
+						<div class="top"></div>
+						<div class="logo">
+							<img src="elt/images/elt_logo_2.gif" />
+						</div>
+						<div class="form_login">
+							<form method="post" action="" class="form">
+								<div class="form-line">
+									<label class="label">
+									</label>
+									<div class="element">
+										<p class="red">
+											<g:InlineLabel ui:field="message" />
+										</p>
+									</div>
+
+								</div>
+								<div class="form-line">
+									<label class="label">账号：</label>
+									<div class="element">
+										<g:TextBox maxLength="30" ui:field="username"
+											styleName="text" />
+									</div>
+								</div>
+
+								<div class="form-line">
+									<label class="label">密码：</label>
+									<div class="element">
+										<g:PasswordTextBox ui:field="password"
+											styleName="text" />
+
+									</div>
+								</div>
+
+								<div class="form-line" style="display:none;">
+									<label class="label">验证码：</label>
+									<div class="element">
+
+										<g:TextBox maxLength="30" ui:field="codeCheck"
+											styleName="text short-text"></g:TextBox>
+										<g:Image ui:field="verifyImage" styleName="verifyImage" pixelSize="59,20"></g:Image>
+										<g:Anchor ui:field="prompt" text="看不清？" styleName="anchor"></g:Anchor>
+
+
+									</div>
+								</div>
+								<div class="form-line form-line-btn">
+									<div class="element">
+										<span class="login-btn">
+											<g:Button ui:field="loginButton" styleName="login">
+											</g:Button>
+										</span>
+										<g:Anchor ui:field="forgetPwd" text="忘记密码？"
+											styleName="anchor"></g:Anchor>
+									</div>
+								</div>
+								<div class="form-line form-line-btn post">
+									<span class="login-btn">
+										无法登录，请
+										<g:Anchor ui:field="license" text="点击这里" styleName="anchor"></g:Anchor>
+										或致电000-0000-000获得帮助。
+									</span>
+								</div>
+							</form>
+						</div>
+
+					</div>
+					<div class="bottom cl">
+						<p>www.OMDASOFT.com Copyright 2012, All Rights Reserved</p>
+					</div>
+				</div>
+
+			</div>
+
+
+
+		</g:HTMLPanel>
+	 
+</ui:UiBinder>

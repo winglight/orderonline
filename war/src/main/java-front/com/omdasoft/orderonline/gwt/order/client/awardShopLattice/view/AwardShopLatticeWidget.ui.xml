@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' xmlns:d='urn:import:com.google.gwt.user.datepicker.client'
+	xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style src="new2.css" field="new2"></ui:style>
+
+	<g:HTMLPanel>
+		
+							<li csysid="" systemid="8070">
+								<!-- 去掉特殊处理的部分 -->
+
+								<a onClick="showDivL(this,'cn_detail_8070',0);" href="javascript:;">
+									<g:Image width="144" height="144" pixelSize="144,144"
+										ui:field="photo" url="elt/images/gift.png" />
+								</a>
+								<span class="content_box_left_main_right_c_ul_li_1">
+									<g:Anchor ui:field="awardName" styleName="{new2.shopa}" />
+									<div class="content_box_left_main_right_c_ul_li_1_1">
+										<span>
+											<g:InlineLabel ui:field="integral" />
+											元/份
+										</span>
+									</div>
+								</span>
+								<span class="content_box_left_main_right_c_ul_li_2">
+									<g:Image width="128" height="21"  pixelSize="128,21" url="elt/images/b4.gif"   ui:field="exchangeBtn" /> 
+								</span>
+							</li>
+	
+	</g:HTMLPanel>
+</ui:UiBinder>
